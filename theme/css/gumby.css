@@ -682,7 +682,7 @@ ul.downloadBox.active li { z-index: 101; }
 .documents .holder .twenty-seven .infos .when { margin-right: 50px; }
 .documents .holder .twenty-seven .infos .where { margin-right: 45px; }
 .documents .holder .twenty-seven .infos .link { color: #383838; }
-.documents .holder .thirteen { background: #FFF; border-bottom: 1px solid #aecada; margin-left: 0px; text-align: center; line-height: 240px; min-height: 240px; }
+.documents .holder .thirteen { background: #FFF; border-bottom: 1px solid #aecada; margin-left: 0px; text-align: center; line-height: 240px; min-height: 242px; }
 .documents .holder .thirteen img { vertical-align: middle; }
 .documents .holder.min .twenty-seven { width: 100%; height: auto; }
 .documents .holder.min .twenty-seven h1 { margin-bottom: 0; }

@@ -1,480 +1,179 @@
-// Your custom SCSS should be written here...
-html{
-  background:url(../img/bg-body.png) top left repeat-x #cee7f4;
-}
-body{
-  background:url(../img/bg-un.png) 50px 140px no-repeat;
-}
+$leading: right;
+$trailing: left;
+$dir: rtl;
+@import "bidi";
 
 $primary-blue: #5c75af;
 $primary-blue-border: #455887;
+$body-link-color: #5378b0;
 
 $left: leading;
 $right: trailing;
 
+.row{
+  .prefix_1 { margin-right: 29px; }
+  .prefix_2 { margin-right: 58px; }
+  .prefix_3 { margin-right: 87px; }
+  .prefix_4 { margin-right: 116px; }
+  .prefix_5 { margin-right: 145px; }
+  .suffix_1 { margin-left: 29px; }
+  .suffix_2 { margin-left: 58px; }
+  .suffix_3 { margin-left: 87px; }
+  .suffix_4 { margin-left: 116px; }
+  .suffix_5 { margin-left: 145px; }
+}
+
+// Your custom SCSS should be written here...
+html *{
+  direction: $dir;
+}
+.column, .columns {
+  float: right;
+}
 #unBar {
-  background:#383838;
-  color:#FFF;
-  height:26px;
-  font:normal 12px Arial;
-  line-height:auto;
-  overflow:hidden;
-  img{
-    width:15px;
-    height:26px;
-    vertical-align:middle;
-  }
+  text-align: left;
   a {
-    color:#FFF;
-    display:block;
     @include float($right);
-    line-height:26px;
-    &:hover{
-      color:#FFF;
-      text-decoration:underline;
-    }
   }
 }
 
 .unLogo {
-  position: absolute;
-  top: 140px;
+  #{$trailing}: auto;
   #{$leading}: 50px;
-  z-index: 1;
 }
 
 header {
-  position: relative;
-  margin-bottom: 30px !important;
-  .logo {
-    margin: 30px 0 30px 0;
-  }
   #menu{
     ul {
-      margin:0;
-      padding:0;
       li{
         background:url(../img/nav-list.gif) $leading center no-repeat;
         padding: 0;
         @include padding-leading(10px);
+        @include margin-leading(0);
         @include margin-trailing(45px);
         @include float($left);
-        a{
-          color:#383838;
-          display:block;
-          font-size: 14px;
-          font-weight:bold;
-          &:hover{
-            color:#383838;
-            text-decoration:underline;
-          }
-        }
       }
     }
   }
-
-
   .languages{
     @include float($right);
-    margin-bottom: 60px;
-    text-align: right;
-    li {
-      display: inline;
-      a {
-        color:#5271a0;
-        @include margin-leading(10px);//margin-left:10px;
-        &:hover{
-          color:#5271a0;
-          text-decoration:underline;
-        }
-        &.current{
-          color:#383838;
-          &:hover{
-            color:#383838;
-            text-decoration:underline;
-          }
-        }
-      }
-    }
   }
   #search {
     @include float($left);
-    position:relative;
-    width:230px;
     .texto{
-      border-radius:3px;
-      border:1px solid #b6b6b6;
-      color:#8a8a8a;
-      font-size:16px;
-      font-weight:normal;
-      height:33px;
-      line-height: 33px;
       padding: 0;
       @include padding-leading(10px);//padding-left:10px;
       @include padding-trailing(35px);//padding-left:35px;
-      width:230px;
-      margin-bottom: 20px;
     }
     .botao{
-      background:url(../img/bt-search.gif);
-      height:21px;
-      position:absolute;
-      top:6px;
+      #{$leading}:auto;
       #{$trailing}:8px;
-      box-shadow: none;
-      border-radius: 0;
-      margin: 0;
-      border: none;
-      width:20px;
-      font-family: inherit;
-      cursor: pointer;
     }
 
-
-    input[type=checkbox].css-checkbox {
-      position: absolute;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      height:1px;
-      width:1px;
-      margin:-1px;
-      padding:0;
-      border:0;
-    }
     input[type=checkbox].css-checkbox + label.css-label {
       @include padding-leading(24px);//padding-left:24px;
-      height:16px;
-      display:inline-block;
-      line-height:16px;
-      background-repeat:no-repeat;
       background-position: $leading 0;
-      font-size:13px;
+
       @include margin-leading(30px);//margin-left: 30px;
-      vertical-align:middle;
-      cursor:pointer;
     }
     input[type=checkbox].css-checkbox:checked + label.css-label { background-position: $leading -16px; }
-    .nomargin{@include margin-leading(0px, yes);//margin-left:0 !important;
+    .nomargin{
+      @include margin-leading(0px, yes);//margin-left:0 !important;
     }
-
-    .css-label{ background-image:url(../img/checkbox.png); }
-  }
-  .referencia {
-    position: relative;
-    z-index: 10;
   }
   .myAccount{
-    background:$primary-blue;
-    border-bottom:1px solid $primary-blue-border;
-    border-radius:3px;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-    color:#FFF;
-    display:block;
-    font-size:13px;
-    font-weight:bold;
     @include float($right);
-    height: 33px;
-    line-height: 33px;
-    text-align:center;
-    width:114px;
-    &:hover, &.active{
-      box-shadow: none;
-      border-bottom:1px solid $primary-blue-border;
-    }
   }
   #loginBox{
-    background: $primary-blue;
-    position: absolute;
-    top:40px;
+    #{$leading}:auto;
     #{$trailing}:0;
-    padding: 14px;
-    width: 230px;
-    border-radius: 3px;
-    //height: 190px;
-    z-index: 999;
     .pinguelo{
-      position: absolute;
-      top: -6px;
+      #{$leading}:auto;
       #{$trailing}: 54px;
-    }
-    form {
-      margin-bottom: 0!important;
-    }
-    .text{
-      font-size: 13px;
-      border-radius: 3px;
-      border:1px solid $primary-blue-border;
-      background:#FFF;
-      margin-bottom: 9px;
-      width: 200px;
-      padding: 10px 6px;
-    }
-    .botao{
-      cursor: pointer;
-      background:#383838;
-      border: none;
-      border-bottom:1px solid #242424;
-      border-radius:2px;
-      box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-      color:#FFF;
-      display:block;
-      font-size:13px;
-      font-weight:bold;
-      height: 33px;
-      text-align:center;
-      margin-bottom: 9px;
-      width:85px;
-      font-family: inherit;
-    }
-    a {
-      color: #FFF;
-      display: block;
-      font-weight: bold;
-      text-transform: uppercase;
-      line-height: 18px;
-      &:hover{
-        color: #FFF;
-      }
     }
   }
 
   .loggedin{
-    background:$primary-blue;
-    border-bottom:1px solid $primary-blue-border;
-    border-radius:3px;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-    color:#FFF;
-    display:block;
-    font-size:13px;
-    font-weight:bold;
     @include float($right);
-    height: 34px;
-    line-height: 33px;
-    width: 52px;
-
     img {
-      vertical-align: middle;
-
       &:first-child{
-        box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
         @include margin-leading(4px);//margin-left: 4px;
         @include margin-trailing(3px);//margin-right: 3px;
       }
     }
-    &:hover, &.active{
-      box-shadow: none;
-      border-bottom:1px solid $primary-blue-border;
-    }
   }
   #loggedinBox{
-    background: $primary-blue;
-    border-bottom:1px solid $primary-blue-border;
-    border-radius:3px;
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top:40px;
+    #{$leading}:auto;
     #{$trailing}:0;
-    padding: 4px 20px 0;
-    width: 213px;
-    border-radius: 3px;
-    text-align: center;
-    //height: 190px;
-    z-index: 999;
     .pinguelo{
-      position: absolute;
-      top: -6px;
+      #{$leading}:auto;
       #{$trailing}: 21px;
     }
     a{
-      border: none;
-      color: #FFF;
-      display: block;
-      font-size: 13px;
-      font-weight: bold;
-      line-height: 36px;
       span{
-        background-color: #dc0202;
-        border-radius: 2px;
-        font-size: 10px;
-        line-height: 15px;
+        @include margin-trailing(0);//margin-left: 2px;
         @include margin-leading(2px);//margin-left: 2px;
-        padding: 0 5px;
-        font-weight: bold;
-        color: #FFF;
       }
-    }
-    a ~ a {
-      border-top: 1px solid #7caaf0;
     }
   }
   .languages{
-    //@include float($right);
-    text-align: right;
-    position: absolute;
-    top: 8px;
+    #{$leading}:auto;
     #{$trailing}: 88px;
     li {
-      display: inline;
       a {
-        color:#5271a0;
+        @include margin-trailing(0);
         @include margin-leading(10px);//margin-left:10px;
-        &:hover{
-          color:#5271a0;
-          text-decoration:underline;
-        }
-        &.current{
-          color:#383838;
-          &:hover{
-            color:#383838;
-            text-decoration:underline;
-          }
-        }
       }
     }
   }
 }
 
 #sizes {
-  position: absolute;
-  top: 8px;
+  #{$leading}:auto;
   #{$trailing}: 2px;
 }
 
 .benefits {
   background:url(../img/bg-transparent-white.png) $leading 0;
-  height:327px;
-  padding-top:10px;
-  position: relative;
-  margin-bottom: 18px;
-  h2{
-    color:#383838;
-    font-size:22px;
-    margin-bottom: 20px;
-  }
+  @include margin-trailing(0, yes);
   p{
     background-position: $leading 0;
-    background-repeat: no-repeat;
-    line-height: 18px;
-    margin-bottom: 20px;
-    @include padding-leading(58px);//padding-left: 58px;
-    @include padding-trailing(29px);//padding-right: 29px;
+    @include padding-leading(58px);
+    @include padding-trailing(29px);
     @include float($left);
-    width: 50%;
-    min-height: 90px;
-    span{
-      color: #1b4a6a;
-      display: block;
-      font-weight: bold;
-    }
-  }
-  p.sustainability{
-    background-image:url(../img/51x51-sus.png);
-    background-color: transparent;
-  }
-  p.accessibility{
-    background-image:url(../img/51x51-acc.png);
-    background-color: transparent;
-  }
-  p.efficiency{
-    background-image:url(../img/51x51-efi.png);
-    background-color: transparent;
-  }
-  p.knowledge{
-    background-image:url(../img/51x51-kno.png);
-    background-color: transparent;
   }
 }
 .newsBox{
-  background:#383838;
-  height:327px;
-  padding-top:16px;
-  position: relative;
-  @include margin-leading(0px, yes);//padding-left: 6px;
-
-  h2{
-    color:#FFF;
-    font-size:22px;
-    line-height:22px;
-    margin-bottom: 18px;
-  }
+  @include margin-leading(0px, yes);
   #newsItems{
-    height: 189px;
-    padding-bottom: 10px;
     .item{
-      background:#383838;
-      img{
-        border-radius: 2px;
-        margin-bottom: 6px;
-      }
       p{
-        color:#FFF;
         border-#{$leading}:3px solid #7da4df;
-        font-family:"jubilat";
-        font-size: 16px;
-        line-height:20px;
-        @include padding-leading(6px);//padding-left: 6px;
-        a {
-          color:#FFF;
-          &:hover{
-            color:#FFF;
-            text-decoration: underline;
-          }
-        }
+        @include padding-trailing(0);
+        @include padding-leading(6px);
       }
     }
   }
   .pager {
-    position: absolute;
-    top:71px;
+    #{$leading}:auto;
     #{$trailing}:29px;
-    z-index:8;
-
-    #nextNews, #prevNews {
-      cursor: pointer;
-      display:block;
-      float: right; // leave it alone ¬¬
-      height: 39px;
-      width: 21px;
-      z-index:9;
-    }
-    #nextNews{
-      background:url(../img/bt-news-pager.gif) 0 0 no-repeat;
-      margin-left: 22px; // leave it alone ¬¬
-      &:hover {
-        background-position: -21px 0;
-      }
-    }
-    #prevNews{
-      background:url(../img/bt-news-pager.gif) 0 -39px no-repeat;
-      &:hover {
-        background-position: -21px -39px;
-      }
-    }
-  }
-  .viewall, .twitter{
-    color: #7da4df;
-    position: absolute;
-    bottom:15px;
-    &:hover{
-      color: #f15a22;
-    }
   }
   .viewall{
+    #{$trailing}:auto;
     #{$leading}:29px;
-    font-weight:bold;
-    text-transform:uppercase;
   }
   .twitter{
+    #{$leading}:auto;
     #{$trailing}:29px;
   }
 }
 
 .homeEvents{
-  background:#FFF;
-  border-bottom: 1px solid #aecada;
-  @include padding-trailing(2px);//padding-right: 2px;
   padding:25px 0;
-  position: relative;
+  @include padding-trailing(2px);//padding-right: 2px;
+
+  @include margin-trailing(0, yes);
+
 
   -webkit-border-top-#{$leading}-radius: 2px;
   -webkit-border-bottom-#{$leading}-radius: 2px;
@@ -482,37 +181,12 @@ header {
   -moz-border-radius-bottom#{$leading}: 2px;
   border-top-#{$leading}-radius: 2px;
   border-bottom-#{$leading}-radius: 2px;
-
-  z-index: 3;
-  .seven {
-    position:relative;
-    font-weight:bold;
-    text-transform: uppercase;
-  }
   .icon {
-    font-size:14px;
+    @include margin-leading(0);//margin-right: 4px;
     @include margin-trailing(4px);//margin-right: 4px;
-  }
-
-  .sessionItem{
-    border: none;
-  }
-  .sessionItem ~ .sessionItem {
-    border-top:1px dashed #d5d5d5;
-  }
-
-  // dropdowns
-  .default{
-    width: 201px;
-    height: 35px;
   }
 }
 .dvText {
-  background:#FFF;
-  border-bottom: 1px solid #aecada;
-  padding:50px 90px;
-  position: relative;
-
   -webkit-border-top-#{$leading}-radius: 2px;
   -webkit-border-bottom-#{$leading}-radius: 2px;
   -moz-border-radius-top#{$leading}: 2px;
@@ -520,172 +194,64 @@ header {
   border-top-#{$leading}-radius: 2px;
   border-bottom-#{$leading}-radius: 2px;
   p, ul{
-    font-size: 13px;
-    line-height:18px;
+    @include margin-trailing(0);//margin-left: 88px;
     @include margin-leading(88px);//margin-left: 88px;
   }
   h1{
-    font-family:"jubilat";
-    font-size: 24px;
-    line-height:30px;
     margin:10px 0 15px 88px;
     @include margin-trailing(0px);//margin-right: 0px;
     @include margin-leading(88px);//margin-left: 88px;
   }
   .date{
+    @include margin-trailing(0);//margin-left: 88px;
     @include margin-leading(88px);//margin-left: 88px;
-    text-transform: uppercase;
-  }
-  figure{
-    background: #383838;
-    max-width: 607px;
-    margin-bottom: 20px;
-    figcaption{
-      color: #FFF;
-      font-size: 11px;
-      line-height: 16px;
-      padding: 4px 18px 12px 18px;
-    }
-  }
-  blockquote{
-    border:none;
-    border-top: 2px solid #d5d5d5;
-    border-bottom: 1px solid #d5d5d5;
-    color: #383838;
-    display: block;
-    font-family:"jubilat";
-    font-size: 18px;
-    font-style: italic;
-    padding: 9px 0px 0 0px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    cite{
-      color: #383838;
-      font-family:"jubilat";
-      font-size: 14px;
-      display: block;
-      font-style: italic;
-      margin: 10px 0;
-    }
   }
   .social {
-    position: absolute;
-    top: 50px;
+    #{$leading}:auto;
     #{$trailing}: 90px;
     a {
+      @include margin-leading(0);//margin-right: 20px;
       @include margin-trailing(20px);//margin-right: 20px;
     }
   }
 }
 #pod {
-  border-radius: 3px;
   form{
-    border-radius: 3px;
-    background: #FFF;
     .top {
-      border-radius: 3px 3px 0 0;
-      background: #ebebeb;
-      border: none;
-      margin: 0;
-      @include padding-leading(31px);//padding-left: 31px;
+      @include padding-trailing(0);
+      @include padding-leading(31px);
       p {
         @include float($left);
       }
-      label {
-        font-size: 14px;
-        line-height: 14px;
-        margin-bottom: 5px;
-      }
       input {
-        border:1px solid #b6b6b6;
-        border-radius: 3px;
-        font-size: 14px;
-        line-height: 14px;
-        padding: 8px 10px;
         margin: 0 31px 0 0;
         @include margin-trailing(31px);//margin-right: 31px;
         @include margin-leading(0px);/*LEFT*/
-        width: 228px;
-      }
-      select, .dk_container {
-        width: 315px;
-        height: 35px;
-      }
-      .dk_container {
-        margin: 0;
       }
     }
     .bottom{
-      padding: 31px 31px 60px 31px;
-      position: relative;
       .select {
-        font-size: 14px;
         .squaredFour {
+          @include margin-leading(0);//margin-right: 15px;
           @include margin-trailing(15px);//margin-right: 15px;
-          margin-top: 4px;
         }
       }
       .back {
-        position: absolute;
-        top: 31px;
+        #{$leading}:auto;
         #{$trailing}: 31px;
-        //width: 86px;
-
         .icon {
-          font-size: 23px;
-          line-height: 33px;
-          vertical-align: sub;
-          @include margin-trailing(4px);//margin-right: 4px;
-
+          @include margin-leading(0);
+          @include margin-trailing(4px);
         }
       }
       table {
-        border: none;
-        border-bottom: 2px solid #e2e2e2;
-        margin-top: 20px;
-        width: 100%;
-        td{
-          border: none;
-          border-bottom: 1px solid #e2e2e2;
-          font-size: 13px;
-          line-height: normal;
-          padding: 14px 21px;
-          .inputText {
-            border:1px solid #b6b6b6;
-            border-radius: 3px;
-            font-size: 14px;
-            line-height: 35px;
-            padding: 0 8px;
-            height: 35px;
-            width: 80px;
-            margin: 0;
-          }
-        }
-        .gray {
-          background: #ebebeb;
-          font-weight: normal;
-          padding:0 10px;
-          select{
-            width: 100%;
-          }
-          .dk_theme_gray {
-            margin: 0;
-          }
-        }
         .id{
           border-#{$trailing}: 1px solid #e2e2e2;
-          vertical-align: middle;
           @include padding-leading(0px);//padding-left: 0;
           @include padding-trailing(0px);//padding-right: 0;
-          width: 122px;
           .squaredFour {
-            margin-top: 2px;
+            @include margin-leading(0);//margin-right: 15px;
             @include margin-trailing(15px);//margin-right: 15px;
-          }
-          p {
-            font-size: 16px;
-            line-height: normal;
-            font-weight: bold;
           }
         }
         .title{
@@ -1805,7 +1371,7 @@ ul.downloadBox{
       }
       .statementList {
         border-top: none;
-//        padding: 0;
+        //        padding: 0;
         padding: 10px 0 0 0;
 
         & ~ .statementList {
@@ -1818,7 +1384,7 @@ ul.downloadBox{
 }
 
 .programmeList{
- // border-top: 1px solid #e2e2e2;
+  // border-top: 1px solid #e2e2e2;
   padding-top: 16px;
   margin-top: 20px;
   @include padding-leading(36px);/*LEFT*/
@@ -2182,8 +1748,8 @@ ul.downloadBox{
       .infos{
         direction: ltr;
         .icon {
-           margin-right: 5px;// leave it alone! ¬¬
-           font-size: 14px;
+          margin-right: 5px;// leave it alone! ¬¬
+          font-size: 14px;
         }
         .when{
           margin-right: 50px;// leave it alone! ¬¬
@@ -2202,7 +1768,7 @@ ul.downloadBox{
       @include margin-leading(0px);//margin-left:0;
       text-align: center;
       line-height: 240px;
-      min-height: 242px;
+      min-height: 240px;
       img {
         vertical-align: middle;
       }
