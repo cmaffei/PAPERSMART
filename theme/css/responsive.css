@@ -1,0 +1,341 @@
+@media only screen and (min-width: 1024px) { /** Default DropKick theme  Feel free to edit the default theme or even add your own.  See the readme for themeing help  */
+  /***** Begin Theme, feel free to edit in here! ******/
+  /* One container to bind them... */
+  .dk_container { background: #ebebeb; line-height: 14px; margin: 5px 0 18px 0; border-radius: 3px; font-weight: normal; -moz-border-radius: 3px; -webkit-border-radius: 3px; height: 35px; }
+  .dk_container:focus { outline: 0; }
+  .dk_container a { cursor: pointer; text-decoration: none; }
+  /* Opens the dropdown and holds the menu label */
+  .dk_toggle { /** Help: Arrow image not appearing Try updating this property to your correct dk_arrows.png path */ background-image: url("../img/dropdow-left.gif"); background-repeat: no-repeat; background-position: right center; border: 1px solid #d5d5d5; color: #383838; height: 35px; line-height: 18px; padding: 7px 45px 7px 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: border-color .5s; -moz-transition: border-color .5s; -o-transition: border-color .5s; transition: border-color .5s; }
+  .dk_toggle:hover { color: #383838; }
+  /* Applied when the dropdown is focused */
+  /* Applied whenever the dropdown is open */
+  .dk_open { /** Help: Dropdown menu is covered by something Try setting this value higher */ z-index: 10; }
+  .dk_open .dk_toggle { background-color: #ebebeb; border-color: #d5d5d5; color: #383838; border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; }
+  /* The outer container of the options */
+  .dk_options { box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; -webkit-border-radius: 0 0 3px 3px; }
+  .dk_options a { color: #383838; background-color: #ebebeb; border-bottom: 1px solid #999; font-weight: bold; padding: 8px 10px; }
+  .dk_options li:last-child a { border-bottom: none; }
+  .dk_options a:hover, .dk_option_current a { background-color: #dadada; color: #383838; text-decoration: none; }
+  .dk_options .disabled { cursor: default; }
+  .dk_options .disabled:hover { cursor: default; background-color: #fff; border-bottom: none; text-shadow: none; }
+  /* Inner container for options, this is what makes the scrollbar possible. */
+  .dk_options_inner { border: 1px solid #d5d5d5; background: #FFF; color: #333; max-height: 250px; font-weight: normal !important; border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; -webkit-border-radius: 0 0 3px 3px; padding: 0; margin: 0; }
+  .dk_options_inner li { padding: 0 !important; border-bottom: none; }
+  .dk_options_inner li a { font-weight: normal !important; border-bottom: none; }
+  /* Set a max-height on the options inner */
+  .dk_options_inner, .dk_touch .dk_options { max-height: 250px; }
+  /******  End Theme ******/
+  .dk_theme_white { background: #FFF; }
+  .dk_theme_white .dk_toggle { background-image: url("../img/dropdow2-left.gif"); border: 1px solid #b6b6b6; }
+  .dk_theme_white.dk_open .dk_toggle { background-color: #FFF; border-color: #b6b6b6; }
+  .dk_theme_gray { background: #ebebeb; }
+  .dk_theme_gray .dk_toggle { background-image: url("../img/dropdow3-left.gif"); border: 1px solid transparent; }
+  .dk_theme_gray.dk_open .dk_toggle { background-color: #ebebeb; border-color: transparent; }
+  /***** Critical to the continued enjoyment of working dropdowns ******/
+  .dk_container { display: none; float: left; position: relative; }
+  .dk_container a { outline: 0; }
+  .dk_toggle { display: -moz-inline-stack; display: inline-block; *display: inline; position: relative; zoom: 1; }
+  .dk_open { position: relative; }
+  .dk_open .dk_options { display: block; }
+  .dk_open .dk_label { color: #383838; height: 20px !important; display: block; overflow: hidden !important; }
+  .dk_options { display: none; margin-top: -1px; position: absolute; right: 0; width: 100%; }
+  .dk_options a, .dk_options a:link, .dk_options a:visited { display: block; }
+  .dk_options_inner { overflow: auto; -webkit-overflow-scrolling: touch; position: relative; }
+  .dk_fouc select { position: relative; top: -99999em; visibility: hidden; }
+  .dk_label { height: 20px !important; display: block; overflow: hidden !important; text-transform: none !important; } }
+@media only screen and (min-width: 1024px) and (max-width: 1180px) { html:not(.ie7) { /* Column Classes */ /* Push Classes */ }
+  html:not(.ie7) .column, html:not(.ie7) .columns { margin-left: 0; }
+  html:not(.ie7) .row .one.column { width: 2.3319% !important; }
+  html:not(.ie7) .row .one.columns { width: 2.3319% !important; }
+  html:not(.ie7) .row .two.columns { width: 4.83621% !important; }
+  html:not(.ie7) .row .three.columns { width: 7.34052% !important; }
+  html:not(.ie7) .row .four.columns { width: 9.84483% !important; }
+  html:not(.ie7) .row .five.columns { width: 12.34914% !important; }
+  html:not(.ie7) .row .six.columns { width: 14.85345% !important; }
+  html:not(.ie7) .row .seven.columns { width: 17.35776% !important; }
+  html:not(.ie7) .row .eight.columns { width: 19.86207% !important; }
+  html:not(.ie7) .row .nine.columns { width: 22.36638% !important; }
+  html:not(.ie7) .row .ten.columns { width: 24.87069% !important; }
+  html:not(.ie7) .row .eleven.columns { width: 27.375% !important; }
+  html:not(.ie7) .row .twelve.columns { width: 29.87931% !important; }
+  html:not(.ie7) .row .thirteen.columns { width: 32.38362% !important; }
+  html:not(.ie7) .row .fourteen.columns { width: 34.88793% !important; }
+  html:not(.ie7) .row .fifteen.columns { width: 37.39224% !important; }
+  html:not(.ie7) .row .sixteen.columns { width: 39.89655% !important; }
+  html:not(.ie7) .row .seventeen.columns { width: 42.40086% !important; }
+  html:not(.ie7) .row .eighteen.columns { width: 44.90517% !important; }
+  html:not(.ie7) .row .nineteen.columns { width: 47.40948% !important; }
+  html:not(.ie7) .row .twenty.columns { width: 49.91379% !important; }
+  html:not(.ie7) .row .twenty-one.columns { width: 52.4181% !important; }
+  html:not(.ie7) .row .twenty-two.columns { width: 54.92241% !important; }
+  html:not(.ie7) .row .twenty-three.columns { width: 57.42672% !important; }
+  html:not(.ie7) .row .twenty-four.columns { width: 59.93103% !important; }
+  html:not(.ie7) .row .twenty-five.columns { width: 62.43534% !important; }
+  html:not(.ie7) .row .twenty-six.columns { width: 64.93966% !important; }
+  html:not(.ie7) .row .twenty-seven.columns { width: 67.44397% !important; }
+  html:not(.ie7) .row .twenty-eight.columns { width: 69.94828% !important; }
+  html:not(.ie7) .row .twenty-nine.columns { width: 72.45259% !important; }
+  html:not(.ie7) .row .thirty.columns { width: 74.9569% !important; }
+  html:not(.ie7) .row .thirty-one.columns { width: 77.46121% !important; }
+  html:not(.ie7) .row .thirty-two.columns { width: 79.96552% !important; }
+  html:not(.ie7) .row .thirty-three.columns { width: 82.46983% !important; }
+  html:not(.ie7) .row .thirty-four.columns { width: 84.97414% !important; }
+  html:not(.ie7) .row .thirty-five.columns { width: 87.47845% !important; }
+  html:not(.ie7) .row .thirty-six.columns { width: 89.98276% !important; }
+  html:not(.ie7) .row .thirty-seven.columns { width: 92.48707% !important; }
+  html:not(.ie7) .row .thirty-eight.columns { width: 94.99138% !important; }
+  html:not(.ie7) .row .thirty-nine.columns { width: 97.49569% !important; }
+  html:not(.ie7) .row .fourty.columns { width: 100% !important; }
+  html:not(.ie7) .row .prefix_1 { margin-left: 2.67672%; }
+  html:not(.ie7) .row .prefix_2 { margin-left: 5.18103%; }
+  html:not(.ie7) .row .prefix_3 { margin-left: 7.68534%; }
+  html:not(.ie7) .row .prefix_4 { margin-left: 10.18966%; }
+  html:not(.ie7) .row .prefix_5 { margin-left: 12.69397%; }
+  html:not(.ie7) .row .suffix_1 { margin-right: 2.67672%; }
+  html:not(.ie7) .row .suffix_2 { margin-right: 5.18103%; }
+  html:not(.ie7) .row .suffix_3 { margin-right: 7.68534%; }
+  html:not(.ie7) .row .suffix_4 { margin-right: 10.18966%; }
+  html:not(.ie7) .row .suffix_5 { margin-right: 12.69397%; }
+  html:not(.ie7) .homeEvents .seven { width: 192px !important; }
+  html:not(.ie7) .dashboard { margin: 0 18px 20px !important; }
+  html:not(.ie7) .dashboard a.item { width: 20%; margin-left: 40px !important; }
+  html:not(.ie7) .dashboard a.item:first-child { margin-left: 0px !important; }
+  html:not(.ie7) .listDocument .item .content .statementList ul { max-width: 496px; }
+  html:not(.ie7) .presskit .text { width: 65%; } }
+@media only screen and (max-width: 1025px) { .row { padding: 0 !important; padding-right: 2px !important; }
+  header #search { width: 210px; }
+  header #search .texto { width: 210px; }
+  header #search input[type=checkbox].css-checkbox + label.css-label { margin-left: 10px; }
+  header .languages a { margin-left: 9px; }
+  .homeEvents .seven { width: 192px !important; }
+  .dashboard { margin: 0 18px 20px !important; }
+  .dashboard a.item { width: 130px; height: 130px; margin-left: 40px !important; }
+  .dashboard a.item:first-child { margin-left: 0px !important; }
+  #pod .top { padding-left: 15px !important; padding-right: 15px !important; }
+  #pod .top input { margin-right: 25px !important; width: 200px !important; }
+  #pod .bottom { padding: 31px 15px 60px 15px !important; }
+  #pod .bottom table .gray { padding: 0 !important; }
+  #pod .bottom table .title, #pod .bottom table .langs, #pod .bottom table .pages { padding-left: 8px !important; padding-right: 4px !important; }
+  #pod .bottom table .copies { padding-left: 8px !important; }
+  #pod .bottom table .braile { padding-left: 0px !important; }
+  #pod select { width: 100% !important; }
+  #pod .dk_toggle { width: 100% !important; }
+  #pod form .bottom table .gray select { width: 100% !important; } }
+@media only screen and (max-width: 1023px) { html:not(.oldie) { background: #FFF !important; }
+  html:not(.oldie) body { background: url(../img/bg-mobile.png) left 0 repeat-x !important; }
+  html:not(.oldie) .row { padding: 0 9px !important; }
+  html:not(.oldie) #unBar, html:not(.oldie) .newsBox, html:not(.oldie) aside, html:not(.oldie) header, html:not(.oldie) .benefits { display: none; }
+  html:not(.oldie) .row.mobile { display: block; padding-top: 8px !important; padding-bottom: 12px !important; height: 44px; color: #FFF; }
+  html:not(.oldie) .row.mobile img { vertical-align: middle; }
+  html:not(.oldie) .row.mobile #loginMobile { float: right; background-color: #5579ad; color: #FFF; display: inline; padding: 0 8px; border-radius: 3px; font-weight: bold; font-size: 13px; margin-left: 10px; margin-right: 28px; }
+  html:not(.oldie) .row.mobile.blue { background: #85a1de; margin-bottom: 9px !important; }
+  html:not(.oldie) .row.mobile.blue #showLeftPush { background: url(../img/menu.png) 0 0 no-repeat; border: none; width: 25px; height: 20px; text-indent: -10000px; margin-right: 5px; margin-left: 28px; }
+  html:not(.oldie) .row.mobile.blue .btSearch { float: right; font-size: 20px; color: #FFF; }
+  html:not(.oldie) .row.mobile.blue .btSearch:hover { color: #FFF; }
+  html:not(.oldie) .row.mobile.blue .mobileLanguage { color: #FFF; float: right; font-size: 13px; font-weight: normal; position: relative; }
+  html:not(.oldie) .row.mobile.blue .mobileLanguage a { color: #FFF; }
+  html:not(.oldie) .row.mobile.blue .mobileLanguage a .icon { font-size: 9px; font-weight: bold; }
+  html:not(.oldie) .row.mobile.blue .mobileLanguage a:hover { color: #FFF; }
+  html:not(.oldie) .row.mobile.blue .mobileLanguage ul { background: #85A1DE; border: 1px solid #5c75af; position: absolute; top: 30px; right: 0; z-index: 10; }
+  html:not(.oldie) .row.mobile.blue .mobileLanguage ul a { padding: 0 20px; }
+  html:not(.oldie) .row.mobile.dark { background: #2a2a2a; margin-bottom: 9px !important; }
+  html:not(.oldie) .btLocation { position: relative; }
+  html:not(.oldie) .btLocation select { position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 13px; opacity: 0; }
+  html:not(.oldie) .homeEvents { border: none; border-radius: 2px; width: 100% !important; background: transparent !important; }
+  html:not(.oldie) .homeEvents .seven { width: 30% !important; float: left; }
+  html:not(.oldie) .homeEvents .seven .dk_container { display: none !important; }
+  html:not(.oldie) .homeEvents .seven select, html:not(.oldie) .homeEvents .seven .dk_fouc select { display: block !important; visibility: visible !important; top: auto !important; width: 100% !important; }
+  html:not(.oldie) .homeEvents .seven.suffix_2 { margin-right: 3% !important; }
+  html:not(.oldie) .sessionItem ul { border: 1px solid #d5d5d5; border-radius: 2px; }
+  html:not(.oldie) .sessionItem ul .pinguelo { display: none; }
+  html:not(.oldie) .sessionItem ul .where, html:not(.oldie) .sessionItem ul .when, html:not(.oldie) .sessionItem ul .who, html:not(.oldie) .sessionItem ul li { border: none !important; float: none !important; width: 100% !important; padding-left: 44px; }
+  html:not(.oldie) .sessionItem ul .where .icon, html:not(.oldie) .sessionItem ul .when .icon, html:not(.oldie) .sessionItem ul .who .icon, html:not(.oldie) .sessionItem ul li .icon { text-align: center; width: 22px; }
+  html:not(.oldie) .documents { width: 100% !important; }
+  html:not(.oldie) .documents .holder .twenty-seven { width: 65% !important; float: left; }
+  html:not(.oldie) .documents .holder .twenty-seven .btExpand { top: 22px; left: 25px; }
+  html:not(.oldie) .documents .holder .twenty-seven .breadcrumb { display: none; }
+  html:not(.oldie) .documents .holder .twenty-seven .infos span, html:not(.oldie) .documents .holder .twenty-seven .infos a { white-space: nowrap; }
+  html:not(.oldie) .documents .holder .thirteen { width: 34.8% !important; float: left; }
+  html:not(.oldie) .documents .holder .thirteen img { padding: 0 10px; }
+  html:not(.oldie) .documents .holder.min .twenty-seven { width: 100% !important; height: auto; }
+  html:not(.oldie) .documents .holder.min .twenty-seven .breadcrumb { display: none; }
+  html:not(.oldie) .documents .holder.min .twenty-seven .infos { display: none; }
+  html:not(.oldie) .documents .holder.min .thirteen { display: none; }
+  html:not(.oldie) .programmeList ul { border: 1px solid #d5d5d5; border-radius: 2px; }
+  html:not(.oldie) .programmeList ul .pinguelo { display: none; }
+  html:not(.oldie) .programmeList ul li { border: none !important; float: none !important; width: 100% !important; }
+  html:not(.oldie) .documentContent { /* One container to bind them... */ /* Opens the dropdown and holds the menu label */ /* Applied when the dropdown is focused */ /* Applied whenever the dropdown is open */ /* The outer container of the options */ /* Inner container for options, this is what makes the scrollbar possible. */ /* Set a max-height on the options inner */ /******  End Theme ******/ /***** Critical to the continued enjoyment of working dropdowns ******/ }
+  html:not(.oldie) .documentContent .dk_container { background: #ebebeb; line-height: 14px; margin: 5px 0 18px 0; border-radius: 5px; font-weight: normal; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+  html:not(.oldie) .documentContent .dk_container:focus { outline: 0; }
+  html:not(.oldie) .documentContent .dk_container a { cursor: pointer; text-decoration: none; }
+  html:not(.oldie) .documentContent .dk_toggle { /** Help: Arrow image not appearing Try updating this property to your correct dk_arrows.png path */ background-image: url("../img/dropdow-left.gif"); background-repeat: no-repeat; background-position: right center; border: 1px solid #d5d5d5; color: #383838; height: 35px; line-height: 18px; padding: 7px 45px 7px 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: border-color .5s; -moz-transition: border-color .5s; -o-transition: border-color .5s; transition: border-color .5s; }
+  html:not(.oldie) .documentContent .dk_toggle:hover { color: #383838; }
+  html:not(.oldie) .documentContent .dk_open { /** Help: Dropdown menu is covered by something Try setting this value higher */ z-index: 10; }
+  html:not(.oldie) .documentContent .dk_open .dk_toggle { background-color: #ebebeb; border-color: #d5d5d5; color: #383838; border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; }
+  html:not(.oldie) .documentContent .dk_options { box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; }
+  html:not(.oldie) .documentContent .dk_options a { color: #383838; background-color: #ebebeb; border-bottom: 1px solid #999; font-weight: bold; padding: 8px 10px; }
+  html:not(.oldie) .documentContent .dk_options li:last-child a { border-bottom: none; }
+  html:not(.oldie) .documentContent .dk_options a:hover, html:not(.oldie) .documentContent .dk_option_current a { background-color: #dadada; color: #383838; text-decoration: none; }
+  html:not(.oldie) .documentContent .dk_options .disabled { cursor: default; }
+  html:not(.oldie) .documentContent .dk_options .disabled:hover { cursor: default; background-color: #fff; border-bottom: none; text-shadow: none; }
+  html:not(.oldie) .documentContent .dk_options_inner { border: 1px solid #d5d5d5; background: #FFF; color: #333; max-height: 250px; font-weight: normal !important; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; padding: 0; margin: 0; }
+  html:not(.oldie) .documentContent .dk_options_inner li { padding: 0 !important; border-bottom: none; }
+  html:not(.oldie) .documentContent .dk_options_inner li a { font-weight: normal !important; border-bottom: none; }
+  html:not(.oldie) .documentContent .dk_options_inner, html:not(.oldie) .documentContent .dk_touch .dk_options { max-height: 250px; }
+  html:not(.oldie) .documentContent .dk_container { display: none; float: left; position: relative; }
+  html:not(.oldie) .documentContent .dk_container a { outline: 0; }
+  html:not(.oldie) .documentContent .dk_toggle { display: -moz-inline-stack; display: inline-block; *display: inline; position: relative; zoom: 1; }
+  html:not(.oldie) .documentContent .dk_open { position: relative; }
+  html:not(.oldie) .documentContent .dk_open .dk_options { display: block; }
+  html:not(.oldie) .documentContent .dk_open .dk_label { color: #383838; }
+  html:not(.oldie) .documentContent .dk_options { display: none; margin-top: -1px; position: absolute; right: 0; width: 100%; }
+  html:not(.oldie) .documentContent .dk_options a, html:not(.oldie) .documentContent .dk_options a:link, html:not(.oldie) .documentContent .dk_options a:visited { display: block; }
+  html:not(.oldie) .documentContent .dk_options_inner { overflow: auto; -webkit-overflow-scrolling: touch; position: relative; }
+  html:not(.oldie) .documentContent .dk_fouc select { position: relative; top: -99999em; visibility: hidden; }
+  html:not(.oldie) .documentContent .dk_label { text-transform: none !important; }
+  html:not(.oldie) .documentContent, html:not(.oldie) .inner { border-radius: 2px; width: 100% !important; }
+  html:not(.oldie) .statementList p { width: 85% !important; }
+  html:not(.oldie) footer { margin-top: 57px !important; padding: 65px 0 57px 0 !important; }
+  html:not(.oldie) footer .fourty { width: 100% !important; }
+  html:not(.oldie) footer .fourty ul { text-align: center; }
+  html:not(.oldie) footer #escapeMobile { display: inline-block !important; }
+  html:not(.oldie) .search .fourty { width: auto; }
+  html:not(.oldie) .search .prefix_1 { margin-left: 5px !important; }
+  html:not(.oldie) .search .suffix_1 { margin-right: 5px !important; }
+  html:not(.oldie) .dvText { border-bottom: none; padding: 20px 10px; width: auto !important; }
+  html:not(.oldie) .dvText p, html:not(.oldie) .dvText h1, html:not(.oldie) .dvText .date { margin-left: 0px !important; }
+  html:not(.oldie) .dvText .social { top: 20px; right: 10px; }
+  html:not(.oldie) .dashboard { margin: 0 10px 20px; }
+  html:not(.oldie) .dashboard a.item { margin-left: 6% !important; font-size: 10px; width: 20%; } }
+@media only screen and (max-width: 768px) { html:not(.oldie) #pod .dk_container { display: none !important; }
+  html:not(.oldie) #pod select { display: block !important; visibility: visible !important; top: auto !important; }
+  html:not(.oldie) #pod .top input, html:not(.oldie) #pod .top select { width: 160px !important; }
+  html:not(.oldie) #pod .bottom { padding: 31px 0px 60px 0px !important; }
+  html:not(.oldie) #pod .bottom select { width: 100% !important; }
+  html:not(.oldie) #pod table .id { vertical-align: top !important; text-align: center; }
+  html:not(.oldie) #pod table .id .squaredFour { float: none; margin: 0 !important; display: inline !important; }
+  html:not(.oldie) #pod table .id p { text-align: center; }
+  html:not(.oldie) #pod table .pages { text-align: center; }
+  html:not(.oldie) #pod table .pages p { text-align: center; }
+  html:not(.oldie) #pod table .copies input { width: 50px !important; }
+  html:not(.oldie) .presskit .text { width: 50%; }
+  html:not(.oldie) .sortFields .sortItem { width: 49%; }
+  html:not(.oldie) .sortFields .sortItem select { width: 100%; } }
+@media only screen and (max-width: 550px) { html:not(.oldie) .statementList .holder { float: none !important; position: relative; height: 36px; margin: 2px 0; }
+  html:not(.oldie) .statementList .holder a { position: absolute; top: 0; margin-left: 0 !important; }
+  html:not(.oldie) .statementList .holder .btVideo { left: 0; }
+  html:not(.oldie) .statementList .holder .btAudio { right: 0; }
+  html:not(.oldie) .statementList article { width: 78%; } }
+@media only screen and (max-width: 430px) { html:not(.oldie) .statementList article { width: 75%; } }
+@media only screen and (max-width: 400px) { html:not(.oldie) { /* Nicolas Gallagher's micro mobilefix */ }
+  html:not(.oldie) .row { padding: 0 !important; margin: 0 !important; }
+  html:not(.oldie) .row.mobile { padding-left: 9px !important; padding-right: 9px !important; }
+  html:not(.oldie) .row.mobile.blue #showLeftPush { margin-left: 0px; }
+  html:not(.oldie) .row.mobile.blue .mobileLanguage { margin-right: 0px; }
+  html:not(.oldie) .row.mobile.blue #loginMobile { margin-right: 0px; }
+  html:not(.oldie) #Upcoming h3 { font-family: 'Open Sans'; font-size: 13px; font-weight: bold; text-transform: uppercase; }
+  html:not(.oldie) #Upcoming h3 ~ h3 { margin-bottom: 10px; }
+  html:not(.oldie) #Upcoming .sessionItem { padding: 10px 0 20px; }
+  html:not(.oldie) #Upcoming .sessionItem ~ .sessionItem { padding: 20px 0; }
+  html:not(.oldie) .homeEvents { border: none; border-radius: 2px; width: 100% !important; }
+  html:not(.oldie) .homeEvents .suffix_1 { margin-right: 10px !important; }
+  html:not(.oldie) .homeEvents .prefix_1 { margin-left: 10px !important; }
+  html:not(.oldie) .homeEvents .seven { width: 30% !important; float: left; }
+  html:not(.oldie) .homeEvents .seven .dk_container { display: none !important; }
+  html:not(.oldie) .homeEvents .seven select, html:not(.oldie) .homeEvents .seven .dk_fouc select { display: block !important; visibility: visible !important; top: auto !important; width: 100% !important; }
+  html:not(.oldie) .homeEvents .seven.suffix_2 { margin-right: 3% !important; }
+  html:not(.oldie) .homeEvents .loadMore { margin-top: 0; }
+  html:not(.oldie) .documents .holder .prefix_1 { margin-left: 10px !important; }
+  html:not(.oldie) .documents .holder .suffix_1 { margin-right: 10px !important; }
+  html:not(.oldie) .documents .holder .twenty-seven { background: #e2f1f8 !important; width: 100% !important; padding: 0; height: auto !important; }
+  html:not(.oldie) .documents .holder .twenty-seven h1 { font-size: 20px !important; line-height: 24px !important; margin: 10px 0 !important; min-height: 10px !important; }
+  html:not(.oldie) .documents .holder .thirteen { display: none; }
+  html:not(.oldie) .documents .holder .infos { margin-bottom: 10px; }
+  html:not(.oldie) .documents .holder .infos a { display: block; }
+  html:not(.oldie) .documents .holder .btExpand { top: auto !important; left: auto !important; bottom: 14px !important; right: 10px !important; }
+  html:not(.oldie) .documents .holder.min .twenty-seven { background: #e2f1f8 !important; width: 100% !important; padding: 0; height: auto !important; padding-bottom: 20px; }
+  html:not(.oldie) .documents .holder.min .thirteen { display: none; }
+  html:not(.oldie) .documents .holder.min .infos { display: none; }
+  html:not(.oldie) .documentContent { /* One container to bind them... */ /* Opens the dropdown and holds the menu label */ /* Applied when the dropdown is focused */ /* Applied whenever the dropdown is open */ /* The outer container of the options */ /* Inner container for options, this is what makes the scrollbar possible. */ /* Set a max-height on the options inner */ /******  End Theme ******/ /***** Critical to the continued enjoyment of working dropdowns ******/ }
+  html:not(.oldie) .documentContent .prefix_1 { margin-left: 10px !important; }
+  html:not(.oldie) .documentContent .suffix_1 { margin-right: 10px !important; }
+  html:not(.oldie) .documentContent #documentIcons { height: 65px; overflow: hidden; padding-bottom: 20px; }
+  html:not(.oldie) .documentContent .sort .dummie { width: 100%; }
+  html:not(.oldie) .documentContent .sort .dummie label { float: left; width: 60px; margin-top: 8px; }
+  html:not(.oldie) .documentContent .sort .dummie select, html:not(.oldie) .documentContent .sort .dummie .dk_container { float: right !important; }
+  html:not(.oldie) .documentContent .sort .search { display: none; }
+  html:not(.oldie) .documentContent .dk_container { background: #ebebeb; line-height: 14px; margin: 5px 0 18px 0; border-radius: 5px; font-weight: normal; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+  html:not(.oldie) .documentContent .dk_container:focus { outline: 0; }
+  html:not(.oldie) .documentContent .dk_container a { cursor: pointer; text-decoration: none; }
+  html:not(.oldie) .documentContent .dk_toggle { /** Help: Arrow image not appearing Try updating this property to your correct dk_arrows.png path */ background-image: url("../img/dropdow-left.gif"); background-repeat: no-repeat; background-position: right center; border: 1px solid #d5d5d5; color: #383838; height: 35px; width: 100% !important; line-height: 18px; padding: 7px 45px 7px 10px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: border-color .5s; -moz-transition: border-color .5s; -o-transition: border-color .5s; transition: border-color .5s; }
+  html:not(.oldie) .documentContent .dk_toggle:hover { color: #383838; }
+  html:not(.oldie) .documentContent .dk_open { /** Help: Dropdown menu is covered by something Try setting this value higher */ z-index: 10; }
+  html:not(.oldie) .documentContent .dk_open .dk_toggle { background-color: #ebebeb; border-color: #d5d5d5; color: #383838; border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; }
+  html:not(.oldie) .documentContent .dk_options { box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 8px; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; }
+  html:not(.oldie) .documentContent .dk_options a { color: #383838; background-color: #ebebeb; border-bottom: 1px solid #999; font-weight: bold; padding: 8px 10px; }
+  html:not(.oldie) .documentContent .dk_options li:last-child a { border-bottom: none; }
+  html:not(.oldie) .documentContent .dk_options a:hover, html:not(.oldie) .documentContent .dk_option_current a { background-color: #dadada; color: #383838; text-decoration: none; }
+  html:not(.oldie) .documentContent .dk_options .disabled { cursor: default; }
+  html:not(.oldie) .documentContent .dk_options .disabled:hover { cursor: default; background-color: #fff; border-bottom: none; text-shadow: none; }
+  html:not(.oldie) .documentContent .dk_options_inner { border: 1px solid #d5d5d5; background: #FFF; color: #333; max-height: 250px; font-weight: normal !important; border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; padding: 0; margin: 0; }
+  html:not(.oldie) .documentContent .dk_options_inner li { padding: 0 !important; border-bottom: none; }
+  html:not(.oldie) .documentContent .dk_options_inner li a { font-weight: normal !important; border-bottom: none; }
+  html:not(.oldie) .documentContent .dk_options_inner, html:not(.oldie) .documentContent .dk_touch .dk_options { max-height: 250px; }
+  html:not(.oldie) .documentContent .dk_container { display: none; float: left; position: relative; }
+  html:not(.oldie) .documentContent .dk_container a { outline: 0; }
+  html:not(.oldie) .documentContent .dk_toggle { display: -moz-inline-stack; display: inline-block; *display: inline; position: relative; zoom: 1; }
+  html:not(.oldie) .documentContent .dk_open { position: relative; }
+  html:not(.oldie) .documentContent .dk_open .dk_options { display: block; }
+  html:not(.oldie) .documentContent .dk_open .dk_label { color: #383838; }
+  html:not(.oldie) .documentContent .dk_options { display: none; margin-top: -1px; position: absolute; right: 0; width: 100%; }
+  html:not(.oldie) .documentContent .dk_options a, html:not(.oldie) .documentContent .dk_options a:link, html:not(.oldie) .documentContent .dk_options a:visited { display: block; }
+  html:not(.oldie) .documentContent .dk_options_inner { overflow: auto; -webkit-overflow-scrolling: touch; position: relative; }
+  html:not(.oldie) .documentContent .dk_fouc select { position: relative; top: -99999em; visibility: hidden; }
+  html:not(.oldie) .documentContent .dk_label { height: 20px !important; display: block; overflow: hidden !important; text-transform: none !important; }
+  html:not(.oldie) .listDocument .item .content .blackBox { left: -80px !important; }
+  html:not(.oldie) .listDocument .item .content .blackBox .pinguelo { left: 50%; margin-left: -5px; }
+  html:not(.oldie) .listDocumentItem .title { width: 79% !important; }
+  html:not(.oldie) .programmeList { padding-top: 5px; }
+  html:not(.oldie) .programmeList .holder { display: none; }
+  html:not(.oldie) .programmeList .holderMobile { display: block; margin: 0 0 20px 0; width: 100% !important; }
+  html:not(.oldie) .programmeList .holderMobile .blueButton { margin: 0; }
+  html:not(.oldie) .programmeList .holderMobile .btVideo { float: left; }
+  html:not(.oldie) .programmeList .holderMobile .btAudio { float: right; }
+  html:not(.oldie) .search .fourty h1 { font-size: 16px !important; }
+  html:not(.oldie) .statementList p { width: 79% !important; }
+  html:not(.oldie) .statementList article { width: 74%; }
+  html:not(.oldie) .dashboard { margin: 0 10px 20px; }
+  html:not(.oldie) .dashboard a.item { margin-left: 0 !important; font-size: 10px; width: 40%; margin-bottom: 17px; float: left; }
+  html:not(.oldie) .dashboard a.item img { display: none !important; }
+  html:not(.oldie) .dashboard a.item:nth-child(2), html:not(.oldie) .dashboard a.item:nth-child(4) { float: right; }
+  html:not(.oldie) .dashboard a.item:nth-child(2):after, html:not(.oldie) .dashboard a.item:nth-child(4):after { clear: both; }
+  html:not(.oldie) .dashboard a.item:nth-child(3), html:not(.oldie) .dashboard a.item:nth-child(4) { margin-bottom: 0px; }
+  html:not(.oldie) footer { margin-top: 0 !important; padding: 65px 0 57px 0 !important; }
+  html:not(.oldie) footer .fourty { width: 100% !important; }
+  html:not(.oldie) footer .fourty ul { text-align: center; }
+  html:not(.oldie) footer .fourty ul li { margin-left: 0px; width: 100% !important; }
+  html:not(.oldie) footer .fourty ul .facebook, html:not(.oldie) footer .fourty ul .twitter { width: 30px !important; }
+  html:not(.oldie) footer .fourty ul .facebook { margin-left: 6px; }
+  html:not(.oldie) .presskit h1 { padding-left: 0; }
+  html:not(.oldie) .presskit .mobileAdapt { display: block; float: left; width: 210px; }
+  html:not(.oldie) .presskit .bio { float: none !important; width: 100%; border-bottom: 1px solid #e2e2e2; padding-bottom: 10px; margin-bottom: 20px; }
+  html:not(.oldie) .presskit .bio hr { display: none; }
+  html:not(.oldie) .presskit .bio figure { width: 100%; }
+  html:not(.oldie) .presskit .bio figure img { width: 72px; vertical-align: middle; margin-right: 6px; display: inline-block; }
+  html:not(.oldie) .presskit .bio figure figcaption { background-color: transparent; vertical-align: middle; padding: 0; color: #383838; display: inline-block; }
+  html:not(.oldie) .presskit .bio .w108 { float: right; width: 108px; }
+  html:not(.oldie) .presskit .text { float: none !important; width: 100%; }
+  html:not(.oldie) .mobilefix { *zoom: 1; }
+  html:not(.oldie) .mobilefix:before, html:not(.oldie) .mobilefix:after { content: ""; display: table; }
+  html:not(.oldie) .mobilefix:after { clear: both; }
+  html:not(.oldie) .sortFields { margin-top: -10px; }
+  html:not(.oldie) .sortFields .sortItem { float: none; margin: 0 !important; width: 100%; }
+  html:not(.oldie) .sortFields .sortItem select { width: 100%; }
+  html:not(.oldie) .pagination a { margin: 0 3px; }
+  html:not(.oldie) .pagination a.prev { margin-left: 0px; }
+  html:not(.oldie) .pagination a.prev .icon { margin-left: 5px !important; }
+  html:not(.oldie) .pagination a.next { margin-right: 0px; }
+  html:not(.oldie) .pagination a.next .icon { margin-right: 5px !important; } }
+@media only screen and (max-width: 320px) { html:not(.oldie) .statementList article { width: 72%; } }
+@media only screen and (max-width: 280px) { html:not(.oldie) .statementList article { width: 68%; } }
+html:not(.oldie) .row.mobile.dark { display: none !important; }

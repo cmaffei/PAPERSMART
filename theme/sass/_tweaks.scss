@@ -1,0 +1,98 @@
+.box iframe {width:100%;}
+.css-panes {overflow:visible;}
+.referencia.zz {float:left;}
+.textpage img {margin:10px 0 10px -80px;}
+.statementList article {width: 90% !importants;}
+
+#documentContent .twenty-seven h2 {font-size:150%;font-weight:bold;}
+iframe {border:none;}
+
+/* POD selects not showing */
+#contour select {
+  visibility: visible;
+  top: 0;
+}
+
+/* Statements filters forms */
+#stfilters h3 {font-size:120%;}
+#stfilters form {margin:0;}
+#stfilters  select {padding:5px;width:100%;}
+#statlist {margin-top: -20px;}
+
+/* To fix spacing of list items in the sidebar */
+aside .box ul li {
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+
+.referencia .blueBox a {line-height: 18px; padding: 6px;}
+
+/* To fix spacing of list items in the sidebar */
+aside .box ul li {
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+
+.referencia .blueBox a {line-height: 18px; padding: 6px;}
+.ie7 ul.downloadBox  li {padding-left:0px !important;}
+
+#stfilters h3 {
+  font-size: 13px !important;
+  font-weight: bold !important;
+  color: #383838 !important;
+  text-transform: uppercase !important;
+}
+.content.exp {display:block !important;}
+
+#tabcontent h2 {text-transform: uppercase;}
+
+
+#mobnav {
+  h2 {font-size:14px; font-weight:bold;text-transform:uppercase;color:#FFF;}
+  label {color:#FFF;display:block;}
+  input {padding:4px;}
+  p {color:#FFF;margin:10px 0 0 0;}
+  .botao {
+    background:$primary-blue;
+    border: 0;
+    border-bottom:1px solid $primary-blue-border;
+    border-radius:3px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    color:#FFF;
+    display:block;
+    font-size:13px;
+    font-weight:bold;
+    height: 33px;
+    line-height: 33px;
+    text-align:center;
+    padding: 0 16px;
+    font-family: inherit;
+    cursor: pointer;
+    float: none;
+    margin-top: 10px;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: auto;
+
+    &:hover, &.active{
+      color: #FFF;
+      box-shadow: none;
+      border-bottom: 1px solid $primary-blue;
+    }
+  }
+}
+
+.content.exp {display:block !important;}
+#tabcontent h2:first-child {text-transform: uppercase;}
+
+/* styling for login form in the mobile menu sidebar */
+#mobnav h2 {font-size:14px;font-weight:bold;text-transform:upperase;color:#FFF;}
+#mobnav label {color:#FFF;margin:10px 0 0 0;}
+#mobnav #submit {position:relative !important;width:auto;margin-left:40px;}
+#mobnav p {font-size:13px;}
+
+/* fix change to agenda titles => remove bold and text */
+#agendaContent .toggle h4 {text-transform:none !important;font-weight:normal;}
