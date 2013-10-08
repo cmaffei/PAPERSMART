@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="theme/css/gumby.css?" id="defaultStyle" />
   <link rel="stylesheet" href="theme/css/fix_ar.css?" />
   <link rel="stylesheet" href="theme/css/responsive.css?" id="responsiveStyle" />
+  <link rel="stylesheet" href="theme/css/responsive_ar.css?" id="responsiveArStyle" />
 
   <script type="text/javascript" src="//use.typekit.net/nai0alb.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -41,21 +42,21 @@
   <!-- Grab Google CDN's jQuery, fall back to local if offline -->
   <!-- 2.0 for modern browsers, 1.10 for .oldie -->
   <script>
-  var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-  if(!oldieCheck) {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-  } else {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-  }
+    var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+    if(!oldieCheck) {
+      document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+    } else {
+      document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+    }
   </script>
   <script>
-  if(!window.jQuery) {
-    if(!oldieCheck) {
-      document.write('<script src="theme/js/libs/jquery-2.0.2.min.js"><\/script>');
-    } else {
-      document.write('<script src="theme/js/libs/jquery-1.10.1.min.js"><\/script>');
+    if(!window.jQuery) {
+      if(!oldieCheck) {
+        document.write('<script src="theme/js/libs/jquery-2.0.2.min.js"><\/script>');
+      } else {
+        document.write('<script src="theme/js/libs/jquery-1.10.1.min.js"><\/script>');
+      }
     }
-  }
   </script>
 </head>
 
@@ -144,33 +145,33 @@
     </div>
   </div>
   <div class="thirteen columns">
-<!--
-    <div class="referencia">
-      <form id="search">
-        <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
-        <input type="submit" class="botao" value="&nbsp;" />
+    <!--
+        <div class="referencia">
+          <form id="search">
+            <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
+            <input type="submit" class="botao" value="&nbsp;" />
 
-        <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
-        <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
+            <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
+            <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
 
-        <input id="demo_box_2" class="css-checkbox" type="checkbox" />
-        <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
-      </form>
-      <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
+            <input id="demo_box_2" class="css-checkbox" type="checkbox" />
+            <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
+          </form>
+          <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
 
-      <div id="loginBox">
-        <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
-        <form id="loginForm">
-          <input type="text" name="email" placeholder="Email" class="text" />
-          <input type="password" name="email" placeholder="Password" class="text" />
-          <input class="botao" type="submit" value="SIGN IN" />
+          <div id="loginBox">
+            <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
+            <form id="loginForm">
+              <input type="text" name="email" placeholder="Email" class="text" />
+              <input type="password" name="email" placeholder="Password" class="text" />
+              <input class="botao" type="submit" value="SIGN IN" />
 
-          <a href="#">REGISTER</a>
-          <a href="#">Forgot Password?</a>
-        </form>
-      </div>
-    </div>
--->
+              <a href="#">REGISTER</a>
+              <a href="#">Forgot Password?</a>
+            </form>
+          </div>
+        </div>
+    -->
 
     <div class="clearfix"></div>
   </div>
@@ -283,114 +284,114 @@
         <h3>Current and upcoming meetings</h3>
 
 
-      <article class="sessionItem">
-        <h1 class="title"><a href="documents.html">Executive Board of the United Nations Entity for Gender Equality and the Empowerment of Women | Annual session of 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNDP/UNFPA/UNOPS EXECUTIVE BOARD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1 class="title"><a href="documents.html">Executive Board of the United Nations Entity for Gender Equality and the Empowerment of Women | Annual session of 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNDP/UNFPA/UNOPS EXECUTIVE BOARD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
-      <article class="sessionItem">
-        <h1 class="title">Doha Climate Change Conference</h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNDP/UNFPA/UNOPS EXECUTIVE BOARD UNDP/UNFPA
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1 class="title">Doha Climate Change Conference</h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNDP/UNFPA/UNOPS EXECUTIVE BOARD UNDP/UNFPA
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
         <h3>Current and upcoming meetings</h3>
 
-      <article class="sessionItem">
-        <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
-      <article class="sessionItem">
-        <h1><a href="documents.html" class="title">United Nations Children’s Fund Executive Board | Annual session 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1><a href="documents.html" class="title">United Nations Children’s Fund Executive Board | Annual session 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
-      <article class="sessionItem">
-        <h1>Economic and Social Council | Permanent Forum on Indigenous Issues | Twelfth session</h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1>Economic and Social Council | Permanent Forum on Indigenous Issues | Twelfth session</h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
-      <article class="sessionItem">
-        <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
       </article>
 

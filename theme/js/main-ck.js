@@ -216,8 +216,17 @@ $(function() {
   var isWindows = navigator.platform.toUpperCase().indexOf('WIN')!==-1;
   var isLinux = navigator.platform.toUpperCase().indexOf('LINUX')!==-1;
 
+  if(isLinux){
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+    if(isAndroid) {
+      isLinux = false;
+    }
+  }
+
   if(isMac || isWindows || isLinux){
     $('#responsiveStyle').remove();
+    $('#responsiveArStyle').remove();
   }
 
 });
@@ -383,6 +392,7 @@ $(document).ready(function () {
     e.preventDefault();
     setCookie("escapeMobile","true",7);
     $('#responsiveStyle').remove();
+    $('#responsiveArStyle').remove();
     $('#returnMobile').css('display', 'inline-block');
   });
 
@@ -398,6 +408,7 @@ $(document).ready(function () {
   if(getCookie("escapeMobile") == "true")
   {
     $('#responsiveStyle').remove();
+    $('#responsiveArStyle').remove();
     $('#returnMobile').css('display', 'inline-block');
   }
 

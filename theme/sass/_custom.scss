@@ -3054,3 +3054,164 @@ footer{
     }
   }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+  html:not(.ie7) {
+    // Generate the Grid
+    .column, .columns {
+      @include margin-leading(0);//margin-left:0;
+    }
+
+    // Column Classes */
+
+    // Generate Column Classes
+    .row {
+      @for $i from 1 through $cols{
+        @if $i == 1 {
+          .one.column {
+            width: columns($i) !important;
+          }
+        }
+        .#{number-as-word($i)}.columns {
+          width: columns($i) !important;
+        }
+      }
+    }
+
+    // Push Classes */
+
+    // Generate Push Classes
+    .row {
+      @for $i from 1 through 5 {
+        .prefix_#{$i} {
+          @include margin-leading( push_x($i) );//margin-left: push_x($i);
+          //&:first-child {
+          //  @include margin-leading( push_x($i, true) );//margin-left: push_x($i, true);
+          //}
+        }
+      }
+    }
+    .row {
+      @for $i from 1 through 5 {
+        .suffix_#{$i} {
+          @include margin-trailing( push_x($i) );//margin-right: push_x($i);
+          //&:first-child {
+          //  @include margin-trailing( push_x($i, true) );//margin-right: push_x($i, true);
+          //}
+        }
+      }
+    }
+
+    .homeEvents{
+      .seven{
+        width: 192px !important;
+      }
+    }
+
+    .dashboard {
+      margin: 0 18px 20px !important;
+      a.item {
+        width: 20%;
+
+        @include margin-leading(40px, yes);//margin-left: 40px !important;
+        &:first-child{
+          @include margin-leading(0px, yes);//margin-left:0 !important;
+        }
+      }
+    }
+    .listDocument .item .content .statementList ul {
+      max-width: 496px;
+    }
+    .presskit {
+      .text {
+        width: 65%;
+      }
+    }
+  }
+}
+
+// 1024px
+@media only screen and (max-width: 1025px) {
+
+  .row{
+    padding:0 !important;
+    @include padding-trailing(2px, yes);//padding:0 0 0 2px !important;
+  }
+
+  header {
+
+    #search {
+      width: 210px;
+      .texto{
+        width: 210px;
+      }
+      input[type=checkbox].css-checkbox + label.css-label{
+        @include margin-leading(10px);//margin-left: 10px;
+      }
+    }
+    .languages {
+      a {
+        @include margin-leading(9px);//margin-left:9px;
+      }
+    }
+  }
+
+  .homeEvents{
+    .seven{
+      width: 192px !important;
+    }
+  }
+
+  .dashboard {
+    margin: 0 18px 20px !important;
+    a.item {
+      width: 130px;
+      height: 130px;
+      @include margin-leading(40px, yes);//margin-left: 40px !important;
+      &:first-child{
+        @include margin-leading(0px, yes);//margin-left:0 !important;
+      }
+    }
+  }
+
+  #pod {
+    .top {
+      @include padding-leading(15px, yes);//padding-left: 15px !important;
+      @include padding-trailing(15px, yes);//padding-right: 15px !important;
+      input {
+        @include margin-trailing(25px, yes);//margin-right: 25px !important;
+        width: 200px !important;
+      }
+    }
+    .bottom{
+      padding: 31px 15px 60px 15px !important;
+      table {
+        .gray {
+          padding: 0 !important;
+        }
+        .title, .langs, .pages{
+          @include padding-leading(8px, yes);//padding-left: 8px !important;
+          @include padding-trailing(4px, yes);//padding-right: 4px !important;
+        }
+        .copies{
+          @include padding-leading(8px, yes);//padding-left: 8px !important;
+        }
+        .braile{
+          @include padding-leading(0px, yes);//padding-left: 0px !important;
+        }
+      }
+    }
+  }
+
+  #pod {
+    select {
+      width: 100% !important;
+    }
+    .dk_toggle {
+      width: 100% !important;
+    }
+    form .bottom table .gray select {
+      width: 100% !important;
+    }
+  }
+
+}// 1024
