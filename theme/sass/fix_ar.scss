@@ -223,6 +223,10 @@ header {
       @include margin-trailing(20px);//margin-right: 20px;
     }
   }
+  ul {
+    padding-left:0;
+    padding-right: 16px;
+  }
 }
 #pod {
   form{

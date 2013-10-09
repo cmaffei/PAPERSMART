@@ -438,7 +438,8 @@ $(document).ready(function () {
     footerButtons();
   });
 
-  $('#sizes, .blueDown').show();
+  $('#sizes').show();
+  $('.blueDown').css('display', 'inline-block');
 });
 
 //functions to handle cookies
