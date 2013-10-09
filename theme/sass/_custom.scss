@@ -335,6 +335,7 @@ header {
 }
 
 #sizes {
+  display: none;
   position: absolute;
   top: 8px;
   #{$trailing}: 2px;
@@ -428,6 +429,8 @@ header {
     top:71px;
     #{$trailing}:29px;
     z-index:8;
+    width: 64px;
+    height: 39px;
 
     #nextNews, #prevNews {
       cursor: pointer;
@@ -2110,14 +2113,10 @@ ul.downloadBox{
   margin-bottom: 20px;
   .holder {
     .breadcrumb {
-      /* Fallback for web browsers that doesn't support RGBa */
-      background:url(../img/bg-transparent-white.png) $leading 0 transparent;
-      /* RGBa with 0.6 opacity */
-      background: rgba(255, 255, 255, 0.4);
-
+      background:url(../img/bg-transparent-white.png) $leading 0 transparent;// Fallback for web browsers that doesn't support RGBa */
+      background: rgba(255, 255, 255, 0.4);// RGBa with 0.6 opacity */
       margin: 0 2px 10px;
-
-      padding: 5px 10px;
+      padding: 5px 29px;
       li {
         margin: 2px 0;
         line-height: 15px;
@@ -2147,11 +2146,8 @@ ul.downloadBox{
     }
 
     .twenty-seven {
-      /* Fallback for web browsers that doesn't support RGBa */
-      background:url(../img/bg-transparent-white.png) $leading 0 transparent;
-      /* RGBa with 0.6 opacity */
-      background: rgba(255, 255, 255, 0.4);
-
+      background:url(../img/bg-transparent-white.png) $leading 0 transparent;// Fallback for web browsers that doesn't support RGBa */
+      background: rgba(255, 255, 255, 0.4);// RGBa with 0.6 opacity */
       border-bottom: 1px solid #c1dbea;
       min-height:240px;
       padding: 10px 0 20px;
@@ -2385,7 +2381,7 @@ ul.downloadBox{
         }
       }
       &.bioinfo li{
-        @include padding-leading(15px);//padding-left: 23px; /*same as padding-left set on li*/
+        @include padding-leading(15px);//padding-left: 23px; //same as padding-left set on li*/
         &:before{
           content: "\f105";
           color: $blue;
@@ -2566,10 +2562,8 @@ footer{
 }
 
 
-/***** End Critical to the continued enjoyment of working dropdowns ******/
 
-/* General styles for all menus */
-
+// General styles for all menus */
 .cbp-spmenu {
   background: #2c2c2c;
   position: fixed;
@@ -2589,15 +2583,6 @@ footer{
   color: #FFF;
   font-size: 1.1em;
   font-weight: 300;
-}
-
-.cbp-spmenu a:hover {
-  //background: #dadada;
-}
-
-.cbp-spmenu a:active {
-  //background: #dadada;
-  //color: #383838;
 }
 
 #cbp-spmenu-s1 {
@@ -2624,7 +2609,7 @@ footer{
   }
 }
 
-/* Orientation-dependent styles for the content of the menu */
+// Orientation-dependent styles for the content of the menu */
 .cbp-spmenu-vertical {
   width: 270px;
   height: 100%;
@@ -2646,7 +2631,6 @@ footer{
       background:url(../img/nav-list.gif) $leading center no-repeat;
       @include padding-leading(10px);//padding-left: 10px;
     }
-
   }
 }
 
@@ -2668,63 +2652,42 @@ footer{
   @include float($left);
   width: 20%;
   padding: 0.8em;
-  //border-#{$leading}: 1px solid #258ecd;
 }
 
 /* Vertical menu that slides from the left or right */
-
 .cbp-spmenu-left {
-  #{$leading}: -270px;
+  left: -270px;
 }
 
 .cbp-spmenu-right {
-  #{$trailing}: -270px;
+  right: -270px;
 }
 
 .cbp-spmenu-left.cbp-spmenu-open {
-  #{$leading}: 0px;
+  left: 0px;
 }
 
 .cbp-spmenu-right.cbp-spmenu-open {
-  #{$trailing}: 0px;
+  right: 0px;
 }
 
-/* Horizontal menu that slides from the top or bottom */
 
-.cbp-spmenu-top {
-  top: -150px;
-}
-
-.cbp-spmenu-bottom {
-  bottom: -150px;
-}
-
-.cbp-spmenu-top.cbp-spmenu-open {
-  top: 0px;
-}
-
-.cbp-spmenu-bottom.cbp-spmenu-open {
-  bottom: 0px;
-}
-
-/* Push classes applied to the body */
-
+// Push classes applied to the body */ cbp-spmenu-push cbp-spmenu-push-toright
 .cbp-spmenu-push {
   overflow-x: hidden;
   position: relative;
-  #{$leading}: 0;
+  left: 0;
 }
 
 .cbp-spmenu-push-toright {
-  #{$leading}: 270px;
+  left: 270px;
 }
 
 .cbp-spmenu-push-toleft {
-  #{$leading}: -270px;
+  left: -270px;
 }
 
-/* Transitions */
-
+// Transitions
 .cbp-spmenu,
 .cbp-spmenu-push {
   -webkit-transition: all 0.3s ease;
@@ -2732,45 +2695,44 @@ footer{
   transition: all 0.3s ease;
 }
 
-/* Example media queries */
 
-@media screen and (max-width: 55.1875em){
-
-  .cbp-spmenu-horizontal {
-    font-size: 75%;
-    height: 110px;
-  }
-
-  .cbp-spmenu-top {
-    top: -110px;
-  }
-
-  .cbp-spmenu-bottom {
-    bottom: -110px;
-  }
-
-}
-
-@media screen and (max-height: 26.375em){
-
-  .cbp-spmenu-vertical {
-    font-size: 90%;
-    width: 190px;
-  }
-
-  .cbp-spmenu-left,
-  .cbp-spmenu-push-toleft {
-    #{$leading}: -190px;
-  }
-
-  .cbp-spmenu-right {
-    #{$trailing}: -190px;
-  }
-
-  .cbp-spmenu-push-toright {
-    #{$leading}: 190px;
-  }
-}
+// Example media queries
+//@media screen and (max-width: 55.1875em){
+//  .cbp-spmenu-horizontal {
+//    font-size: 75%;
+//    height: 110px;
+//  }
+//
+//  .cbp-spmenu-top {
+//    top: -110px;
+//  }
+//
+//  .cbp-spmenu-bottom {
+//    bottom: -110px;
+//  }
+//
+//}
+//
+//@media screen and (max-height: 26.375em){
+//
+//  .cbp-spmenu-vertical {
+//    font-size: 90%;
+//    width: 190px;
+//  }
+//
+//  .cbp-spmenu-left,
+//  .cbp-spmenu-push-toleft {
+//    #{$leading}: -190px;
+//  }
+//
+//  .cbp-spmenu-right {
+//    #{$trailing}: -190px;
+//  }
+//
+//  .cbp-spmenu-push-toright {
+//    #{$leading}: 190px;
+//  }
+//}
 
 .row.mobile {
   display: none;
@@ -3215,3 +3177,5 @@ footer{
   }
 
 }// 1024
+
+#languageBox, .blueDown {display: none;}

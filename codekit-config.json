@@ -1350,7 +1350,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.navbar.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.navbar-ck.js",
       "fileType" : 64
     },
@@ -1502,7 +1502,7 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/theme\/js\/plugins.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/plugins.js",
       "fileType" : 64
     },
@@ -1901,17 +1901,6 @@
       "initialSize" : 3142,
       "fileType" : 8192
     },
-    "\/theme\/img\/flags\/64\/SV.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/theme\/img\/flags\/64\/SV.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/theme\/img\/flags\/64\/SV.png",
-      "initialSize" : 719,
-      "fileType" : 8192
-    },
     "\/theme\/img\/flags\/16\/NA.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1921,6 +1910,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/theme\/img\/flags\/16\/NA.png",
       "initialSize" : 452,
+      "fileType" : 8192
+    },
+    "\/theme\/img\/flags\/64\/SV.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/theme\/img\/flags\/64\/SV.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/theme\/img\/flags\/64\/SV.png",
+      "initialSize" : 719,
       "fileType" : 8192
     },
     "\/theme\/img\/flags\/24\/YT.png" : {
@@ -5151,7 +5151,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.skiplink.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.skiplink-ck.js",
       "fileType" : 64
     },
@@ -5734,7 +5734,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/vendor\/jquery-1.10.2.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/vendor\/jquery-1.10.2.min-ck.js",
       "fileType" : 64
     },
@@ -5867,7 +5867,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.fittext.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.fittext-ck.js",
       "fileType" : 64
     },
@@ -6206,7 +6206,7 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.elastislide.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.elastislide.js",
       "fileType" : 64
     },
@@ -6834,15 +6834,15 @@
       "initialSize" : 1488,
       "fileType" : 8192
     },
-    "\/theme\/img\/flags\/64\/RO.png" : {
+    "\/theme\/img\/flags\/24\/TR.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/theme\/img\/flags\/64\/RO.png",
+      "inputAbbreviatedPath" : "\/theme\/img\/flags\/24\/TR.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/theme\/img\/flags\/64\/RO.png",
-      "initialSize" : 180,
+      "outputAbbreviatedPath" : "\/theme\/img\/flags\/24\/TR.png",
+      "initialSize" : 2964,
       "fileType" : 8192
     },
     "\/theme\/img\/flags\/48\/EG.png" : {
@@ -6867,15 +6867,15 @@
       "initialSize" : 2846,
       "fileType" : 8192
     },
-    "\/theme\/img\/flags\/24\/TR.png" : {
+    "\/theme\/img\/flags\/64\/RO.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/theme\/img\/flags\/24\/TR.png",
+      "inputAbbreviatedPath" : "\/theme\/img\/flags\/64\/RO.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/theme\/img\/flags\/24\/TR.png",
-      "initialSize" : 2964,
+      "outputAbbreviatedPath" : "\/theme\/img\/flags\/64\/RO.png",
+      "initialSize" : 180,
       "fileType" : 8192
     },
     "\/theme\/img\/flags\/32\/IS.png" : {
@@ -6973,7 +6973,7 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.elastislide-ck.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.elastislide.js",
       "fileType" : 64
     },
@@ -8462,7 +8462,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.fixed.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.fixed-ck.js",
       "fileType" : 64
     },
@@ -8477,17 +8477,6 @@
       "initialSize" : 234,
       "fileType" : 8192
     },
-    "\/theme\/img\/flags\/48\/ME.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/theme\/img\/flags\/48\/ME.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/theme\/img\/flags\/48\/ME.png",
-      "initialSize" : 1168,
-      "fileType" : 8192
-    },
     "\/theme\/img\/flags\/24\/TC.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -8497,6 +8486,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/theme\/img\/flags\/24\/TC.png",
       "initialSize" : 3259,
+      "fileType" : 8192
+    },
+    "\/theme\/img\/flags\/48\/ME.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/theme\/img\/flags\/48\/ME.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/theme\/img\/flags\/48\/ME.png",
+      "initialSize" : 1168,
       "fileType" : 8192
     },
     "\/theme\/img\/flags\/16\/LV.png" : {
@@ -8684,7 +8684,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.tabs.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.tabs-ck.js",
       "fileType" : 64
     },
@@ -9023,7 +9023,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.retina.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.retina-ck.js",
       "fileType" : 64
     },
@@ -9100,7 +9100,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.cycle.all.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.cycle.all-ck.js",
       "fileType" : 64
     },
@@ -9364,7 +9364,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/gumby.init.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/gumby.init-ck.js",
       "fileType" : 64
     },
@@ -9545,6 +9545,15 @@
       "initialSize" : 734,
       "fileType" : 8192
     },
+    "\/theme\/css\/fix_zh.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/theme\/css\/fix_zh.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/theme\/img\/flags\/32\/AR.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -9555,15 +9564,6 @@
       "outputAbbreviatedPath" : "\/theme\/img\/flags\/32\/AR.png",
       "initialSize" : 283,
       "fileType" : 8192
-    },
-    "\/theme\/css\/fix_zh.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/theme\/css\/fix_zh.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/theme\/img\/flags\/32\/SR.png" : {
       "ignoreWasSetByUser" : 0,
@@ -9576,17 +9576,6 @@
       "initialSize" : 230,
       "fileType" : 8192
     },
-    "\/theme\/img\/flags\/KH.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/theme\/img\/flags\/KH.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/theme\/img\/flags\/KH.png",
-      "initialSize" : 3151,
-      "fileType" : 8192
-    },
     "\/theme\/img\/flags\/48\/SA.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -9596,6 +9585,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/theme\/img\/flags\/48\/SA.png",
       "initialSize" : 1465,
+      "fileType" : 8192
+    },
+    "\/theme\/img\/flags\/KH.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/theme\/img\/flags\/KH.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/theme\/img\/flags\/KH.png",
+      "initialSize" : 3151,
       "fileType" : 8192
     },
     "\/theme\/img\/flags\/32\/KE.png" : {
@@ -9819,17 +9819,6 @@
       "initialSize" : 166,
       "fileType" : 8192
     },
-    "\/theme\/img\/flags\/24\/MY.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/theme\/img\/flags\/24\/MY.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/theme\/img\/flags\/24\/MY.png",
-      "initialSize" : 2927,
-      "fileType" : 8192
-    },
     "\/theme\/img\/flags\/16\/TF.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -9839,6 +9828,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/theme\/img\/flags\/16\/TF.png",
       "initialSize" : 224,
+      "fileType" : 8192
+    },
+    "\/theme\/img\/flags\/24\/MY.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/theme\/img\/flags\/24\/MY.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/theme\/img\/flags\/24\/MY.png",
+      "initialSize" : 2927,
       "fileType" : 8192
     },
     "\/theme\/sass\/font-awesome\/_path.scss" : {
@@ -10848,7 +10848,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.checkbox.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.checkbox-ck.js",
       "fileType" : 64
     },
@@ -11165,7 +11165,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/vendor\/modernizr-2.6.2.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/vendor\/modernizr-2.6.2.min-ck.js",
       "fileType" : 64
     },
@@ -11284,7 +11284,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/gumby.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/gumby-ck.js",
       "fileType" : 64
     },
@@ -11359,7 +11359,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.cycle.all-ck.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.cycle.all-ck-ck.js",
       "fileType" : 64
     },
@@ -12559,7 +12559,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/vendor\/jquery-2.0.3.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/vendor\/jquery-2.0.3.min-ck.js",
       "fileType" : 64
     },
@@ -12949,7 +12949,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/jquery.validation.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/jquery.validation-ck.js",
       "fileType" : 64
     },
@@ -14186,7 +14186,7 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/theme\/js\/main-ck.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/main.js",
       "fileType" : 64
     },
@@ -15166,7 +15166,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.radiobtn.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.radiobtn-ck.js",
       "fileType" : 64
     },
@@ -15277,7 +15277,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/modernizr-2.6.2.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/modernizr-2.6.2.min-ck.js",
       "fileType" : 64
     },
@@ -15539,7 +15539,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.mobile.custom.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/jquery.mobile.custom.min-ck.js",
       "fileType" : 64
     },
@@ -16098,7 +16098,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/plugins.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/QRCODE_LANDING\/assets\/js\/plugins-ck.js",
       "fileType" : 64
     },
@@ -16384,7 +16384,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/jquery-1.10.1.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/jquery-1.10.1.min-ck.js",
       "fileType" : 64
     },
@@ -16618,7 +16618,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/gumby.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/gumby.min-ck.js",
       "fileType" : 64
     },
@@ -17221,7 +17221,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/jquery-2.0.2.min.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/jquery-2.0.2.min-ck.js",
       "fileType" : 64
     },
@@ -17566,6 +17566,15 @@
       "initialSize" : 478,
       "fileType" : 8192
     },
+    "\/programme-copy.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/programme-copy.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/theme\/img\/flags\/16\/SK.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -17576,15 +17585,6 @@
       "outputAbbreviatedPath" : "\/theme\/img\/flags\/16\/SK.png",
       "initialSize" : 225,
       "fileType" : 8192
-    },
-    "\/programme-copy.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/programme-copy.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/theme\/img\/flags\/64\/PS.png" : {
       "ignoreWasSetByUser" : 0,
@@ -17681,7 +17681,7 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/theme\/js\/main.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/main.js",
       "fileType" : 64
     },
@@ -18436,7 +18436,7 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.toggleswitch.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/libs\/ui\/gumby.toggleswitch-ck.js",
       "fileType" : 64
     },
@@ -19026,7 +19026,7 @@
       "outputPathIsSetByUser" : 1,
       "inputAbbreviatedPath" : "\/theme\/js\/plugins-ck.js",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 0,
       "outputAbbreviatedPath" : "\/theme\/js\/plugins.js",
       "fileType" : 64
     },

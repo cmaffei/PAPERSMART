@@ -523,6 +523,11 @@ aside{
       li {
         @include padding-trailing(0);
         @include padding-leading(23px);
+        &:before{
+          content: '\F104';
+          @include margin-trailing(0);
+          @include margin-leading(-15px);
+        }
       }
     }
   }
@@ -571,6 +576,11 @@ ul.downloadBox{
   li {
     @include padding-trailing(0px, yes);//right
     @include padding-leading(23px, yes);//left
+    &:before{
+      content: "\f104";
+      @include margin-trailing(0);
+      @include margin-leading(-15px);
+    }
   }
 }
 
@@ -861,6 +871,7 @@ ul.downloadBox{
         @include padding-trailing(0);
         @include padding-leading(15px);
         &:before{
+          content: "\f104";
           @include margin-trailing(0);
           @include margin-leading(-15px);
         }
@@ -898,91 +909,6 @@ footer{
         @include float($right);
       }
     }
-  }
-}
-
-#cbp-spmenu-s1 {
-  .botao {
-    #{$leading}:auto;
-    #{$trailing}: 38px;
-  }
-}
-
-.cbp-spmenu-vertical {
-  @include padding-trailing(0);
-  @include padding-leading(40px);
-  li{
-    a, label {
-      background-position:$leading center;
-      @include padding-trailing(0);
-      @include padding-leading(10px);
-    }
-  }
-}
-
-.cbp-spmenu-horizontal {
-  #{$trailing}:auto;
-  #{$leading}: 0;
-}
-
-.cbp-spmenu-horizontal h3 {
-  @include float($left);
-}
-
-.cbp-spmenu-horizontal a {
-  @include float($left);
-}
-
-.cbp-spmenu-left {
-  #{$trailing}:auto;
-  #{$leading}: -270px;
-}
-
-.cbp-spmenu-right {
-  #{$leading}:auto;
-  #{$trailing}: -270px;
-}
-
-.cbp-spmenu-left.cbp-spmenu-open {
-  #{$trailing}:auto;
-  #{$leading}: 0px;
-}
-
-.cbp-spmenu-right.cbp-spmenu-open {
-  #{$leading}:auto;
-  #{$trailing}: 0px;
-}
-
-.cbp-spmenu-push {
-  #{$trailing}:auto;
-  #{$leading}: 0;
-}
-
-.cbp-spmenu-push-toright {
-  #{$trailing}:auto;
-  #{$leading}: 270px;
-}
-
-.cbp-spmenu-push-toleft {
-  #{$trailing}:auto;
-  #{$leading}: -270px;
-}
-
-@media screen and (max-height: 26.375em){
-  .cbp-spmenu-left,
-  .cbp-spmenu-push-toleft {
-    #{$trailing}:auto;
-    #{$leading}: -190px;
-  }
-
-  .cbp-spmenu-right {
-    #{$leading}:auto;
-    #{$trailing}: -190px;
-  }
-
-  .cbp-spmenu-push-toright {
-    #{$trailing}:auto;
-    #{$leading}: 190px;
   }
 }
 
@@ -1229,4 +1155,54 @@ footer{
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
   }
+}
+
+
+// MENU IN MOBILE
+#cbp-spmenu-s1 {
+  .botao {
+    #{$leading}:auto;
+    #{$trailing}: 38px;
+  }
+}
+
+.cbp-spmenu-vertical {
+  @include padding-trailing(0);
+  @include padding-leading(40px);
+  li{
+    text-align: right;
+    a, label {
+      background-position:$leading center;
+      @include padding-trailing(0);
+      @include padding-leading(10px);
+    }
+  }
+}
+/**/
+.cbp-spmenu-left {
+  left: -270px;
+}
+
+.cbp-spmenu-right {
+  right: -270px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px;
+}
+/**/
+
+// Push classes applied to the body cbp-spmenu-push cbp-spmenu-push-toright
+.cbp-spmenu-push {
+  left:0 !important;
+}
+.cbp-spmenu-push-toright {
+  left: 270px;
+}
+.cbp-spmenu-push-toleft {
+  left: -270px;
 }

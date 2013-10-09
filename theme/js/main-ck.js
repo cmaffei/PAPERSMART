@@ -225,8 +225,8 @@ $(function() {
   }
 
   if(isMac || isWindows || isLinux){
-    $('#responsiveStyle').remove();
-    $('#responsiveArStyle').remove();
+//    $('#responsiveStyle').remove();
+//    $('#responsiveArStyle').remove();
   }
 
 });
@@ -380,10 +380,29 @@ SITE.fileInputs = function() {
   }
 };
 
+function footerButtons(){
+  var lag = document.body.clientWidth;
+  if(lag < 1024)
+  {
+    if(getCookie("escapeMobile") == "true")
+    {
+      $('#returnMobile').css('display','inline-block');
+    }
+    else
+    {
+      $('#escapeMobile').css('display','inline-block');
+    }
+  }
+  else
+  {
+    $('footer .blueButton').hide();
+  }
+}
 
 $(document).ready(function () {
   listChange();
   adjustImage();
+  footerButtons();
 
   $('.file-wrapper input[type=file]').on('change focus click', SITE.fileInputs);
 
@@ -416,7 +435,10 @@ $(document).ready(function () {
     updateContainer();
     listChange();
     adjustImage();
+    footerButtons();
   });
+
+  $('#sizes, .blueDown').show();
 });
 
 //functions to handle cookies

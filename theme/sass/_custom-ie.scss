@@ -395,7 +395,7 @@
   }
   .benefits {
     p {
-      width: 289px;
+      width: 240px;
     }
   }
   .newsBox {
@@ -457,4 +457,14 @@
     height: 0;
     zoom: 1;
   }
+
+  .documents {
+    .holder {
+      .breadcrumb {
+        width: 942px;
+      }
+    }
+  }
+
+
 }
