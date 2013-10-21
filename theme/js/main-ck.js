@@ -150,7 +150,7 @@ $(function() {
     var $agenda = $('#agendaContent');
     $agenda.find(".togglebox").hide();
     //slide up and down when click over heading 2
-    $agenda.find('h4').click(function (e) {
+    $agenda.find('h1, h2, h3, h4').click(function (e) {
       e.preventDefault();
       var $this = $(this);
       // slide toggle effect set to slow you can set it to fast too.
@@ -225,8 +225,8 @@ $(function() {
   }
 
   if(isMac || isWindows || isLinux){
-//    $('#responsiveStyle').remove();
-//    $('#responsiveArStyle').remove();
+    $('#responsiveStyle').remove();
+    $('#responsiveArStyle').remove();
   }
 
 });

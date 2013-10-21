@@ -509,6 +509,22 @@ header {
     width: 201px;
     height: 35px;
   }
+  #Upcoming {
+    padding: 0;
+    h2 {
+      font-size: 22px;
+      margin-bottom: -20px;
+    }
+  }
+  #Recent {
+    padding: 0;
+    h2 {
+      border-top: 1px dashed #d5d5d5;
+      font-size: 22px;
+      margin-bottom: -20px;
+      padding-top: 20px;
+    }
+  }
 }
 .dvText {
   background:#FFF;
@@ -570,6 +586,17 @@ header {
       font-style: italic;
       margin: 10px 0;
     }
+    &+p{
+      color: #383838;
+      font-family:"jubilat";
+      font-size: 14px;
+      display: block;
+      font-style: italic;
+      margin:-25px 0 25px;
+      &:before {
+        content: '\2014\00a0';
+      }
+    }
   }
   .social {
     position: absolute;
@@ -597,6 +624,7 @@ header {
       @include padding-leading(31px);//padding-left: 31px;
       p {
         @include float($left);
+        width: 260px;
       }
       label {
         font-size: 14px;
@@ -1069,8 +1097,12 @@ header {
     }
     .abridor {
       @include float($right);
+      color: $primary-blue;
+      cursor: pointer;
       font-size: 22px;
       line-height: 35px;
+      width: 14px;
+      height: 35px;
       //padding: 7px 0;
       &:hover{
         color: $primary-blue;
@@ -1239,9 +1271,12 @@ header {
 .blueDown, .blackDown{
   border-radius: 3px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-  display: inline-block;
+  //display: inline-block;
   height: 24px;
   width: 24px;
+  text-indent: -100000px;
+  overflow: hidden;
+  cursor: pointer;
 }
 .blueDown {
   background: url(../img/blue-down.png) center center no-repeat $primary-blue;
@@ -1730,7 +1765,7 @@ ul.downloadBox{
     //border-bottom: 10px solid transparent;
     //padding-bottom: 15px;
 
-    h4 {
+    h1, h2, h3, h4 {
       border-bottom: 1px solid #e6e6e6;
       color: #225677;
       cursor: pointer;
@@ -1742,7 +1777,9 @@ ul.downloadBox{
       position: relative;
       font-family:"jubilat";
       font-size: 18px;
+      font-weight: normal !important;
       &.title_nocontent {
+        color: #383838;
         cursor: default;
       }
       .icon {
@@ -1771,10 +1808,8 @@ ul.downloadBox{
     }
 
     &.related {
-
       margin-top: 10px;
-
-      h4 {
+      h1, h2, h3, h4 {
         background: #eeeeee;
         border:{
           top:  1px solid #dbdbdb;
@@ -1785,12 +1820,14 @@ ul.downloadBox{
         border-radius: 4px;
         color: #5c75af;
         font-family: 'Open Sans';
+        font-weight: normal;
         font-size: 15px;
         padding: 5px 15px;
         .icon {
           background: none;
           color: #225677;
           font-size: 22px;
+          padding-right: 10px;
         }
       }
 
@@ -1804,6 +1841,15 @@ ul.downloadBox{
       .listDocumentItem {
         border-top: none;
         padding: 10px 0 0 0;
+        h1 {
+          font-size: 14px;
+          font-family: 'Open Sans';
+          font-weight: bold !important;
+          color: #383838;
+          border: none;
+          background: none;
+          padding: 4px 0;
+        }
         //padding: 0;
         & ~ .listDocumentItem {
           border-top: 1px solid #dbdbdb;
@@ -2153,7 +2199,7 @@ ul.downloadBox{
       background:url(../img/bg-transparent-white.png) $leading 0 transparent;// Fallback for web browsers that doesn't support RGBa */
       background: rgba(255, 255, 255, 0.4);// RGBa with 0.6 opacity */
       border-bottom: 1px solid #c1dbea;
-      min-height:240px;
+      min-height:242px;
       padding: 10px 0 20px;
       @include padding-trailing(2px);//padding-right: 2px;
       position: relative;
@@ -3181,5 +3227,15 @@ footer{
   }
 
 }// 1024
+
+.pagination { position: relative; text-align: center; margin-top: 50px; width: 100%; }
+.pagination a { color: #5c75af; font-family: 'Open Sans'; font-size: 16px; line-height: 34px; margin: 0 7px; display: inline-block; }
+.pagination a.current { color: #383838; }
+.pagination a.prev { margin-right: 20px; }
+.pagination a.prev .icon { margin-right: 10px; }
+.pagination a.next { margin-left: 20px; }
+.pagination a.next .icon { margin-left: 10px; }
+.pagination a .icon { font-size: 26px; margin-top: 3px; display: inline-table; }
+
 
 #languageBox, .blueDown {display: none;}

@@ -5,16 +5,16 @@
 <!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="content-type" content="text/html;charset=utf-8" >
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <title>PaperSmart</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <meta name="author" content="humans.txt">
+  <meta name="author" content="humans.txt" />
 
   <!-- Facebook Metadata /-->
   <meta property="fb:page_id" content="" />
@@ -23,11 +23,11 @@
   <meta property="og:title" content=""/>
 
   <!-- Google+ Metadata /-->
-  <meta itemprop="name" content="">
-  <meta itemprop="description" content="">
-  <meta itemprop="image" content="">
+  <meta itemprop="name" content="" />
+  <meta itemprop="description" content="" />
+  <meta itemprop="image" content="" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
   <link rel="stylesheet" href="theme/css/gumby.css?" id="defaultStyle" />
   <link rel="stylesheet" href="theme/css/fix_zh.css?">
@@ -41,21 +41,21 @@
   <!-- Grab Google CDN's jQuery, fall back to local if offline -->
   <!-- 2.0 for modern browsers, 1.10 for .oldie -->
   <script>
-  var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-  if(!oldieCheck) {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-  } else {
-    document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-  }
+    var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+    if(!oldieCheck) {
+      document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+    } else {
+      document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+    }
   </script>
   <script>
-  if(!window.jQuery) {
-    if(!oldieCheck) {
-      document.write('<script src="theme/js/libs/jquery-2.0.2.min.js"><\/script>');
-    } else {
-      document.write('<script src="theme/js/libs/jquery-1.10.1.min.js"><\/script>');
+    if(!window.jQuery) {
+      if(!oldieCheck) {
+        document.write('<script src="theme/js/libs/jquery-2.0.2.min.js"><\/script>');
+      } else {
+        document.write('<script src="theme/js/libs/jquery-1.10.1.min.js"><\/script>');
+      }
     }
-  }
   </script>
 </head>
 
@@ -74,13 +74,13 @@
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
   <form action="#">
     <ul>
-      <li><a href="#">MEETINGS</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">COMMITMENTS</a></li>
-      <li><a href="#">HELP</a></li>
-      <li><a href="#">BENEFITS</a></li>
-      <li><a href="#">CONTACT US</a></li>
-      <li>
+      <li><a href="text.html">MEETINGS</a></li>
+      <li><a href="text.html">ABOUT</a></li>
+      <li><a href="text.html">COMMITMENTS</a></li>
+      <li><a href="text.html">HELP</a></li>
+      <li><a href="text.html">BENEFITS</a></li>
+      <li><a href="text.html">CONTACT US</a></li>
+      <!--<li>
         <a href="javascript:;" class="btLocation">
           CHANGE LOCANTION
           <select id="locationList" onchange="getWeather(this.value)">
@@ -95,7 +95,7 @@
       <li>
         <input id="mobileSearch" type="text" name="q" class="search" placeholder="Search…">
         <input type="submit" class="botao" value="&nbsp;" />
-      </li>
+      </li>-->
     </ul>
   </form>
 </nav>
@@ -106,6 +106,8 @@
   <a href="./">
     <img class="logo" src="theme/img/logo-mobile.png" alt="PaperSmart" width="105" height="20" />
   </a>
+
+  <a id="loginMobile" href="#">LOGIN</a>
 
   <div class="mobileLanguage">
     <a id="openLanguage" href="#">English <span class="icon icon-chevron-down"></span></a>
@@ -128,125 +130,132 @@
 <header class="row">
   <div class="twenty-seven columns">
     <div class="prefix_1 suffix_1 columns">
-      <a href="./">
-        <img class="logo" src="theme/img/logo.png" alt="PaperSmart" />
-      </a>
+      <h1>
+        <a href="./">
+          <img class="logo" src="theme/img/logo.png" alt="United Nations PaperSmart" />
+        </a>
+      </h1>
       <nav id="menu">
         <ul>
-          <li><a href="#">MEETINGS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">COMMITMENTS</a></li>
-          <li><a href="#">HELP</a></li>
+          <li><a href="text.html">MEETINGS</a></li>
+          <li><a href="text.html">ABOUT</a></li>
+          <li><a href="text.html">COMMITMENTS</a></li>
+          <li><a href="text.html">HELP</a></li>
         </ul>
       </nav>
     </div>
   </div>
   <div class="thirteen columns">
-    <ul class="languages">
-      <li><a href="./" dir="rtl"> عربي </a></li>
-      <li><a class="current" href="./">中文</a></li>
-      <li><a href="./">English</a></li>
-      <li><a href="./">Français</a></li>
-      <li><a href="./">Русский</a></li>
-      <li><a href="./">Español</a></li>
-    </ul>
-    <div class="clearfix"></div>
+    <!--
+        <div class="referencia">
+          <form id="search">
+            <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
+            <input type="submit" class="botao" value="&nbsp;" />
 
-    <div class="referencia">
-      <form id="search">
-        <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
-        <input type="submit" class="botao" value="&nbsp;" />
+            <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
+            <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
 
-        <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
-        <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
+            <input id="demo_box_2" class="css-checkbox" type="checkbox" />
+            <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
+          </form>
+          <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
 
-        <input id="demo_box_2" class="css-checkbox" type="checkbox" />
-        <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
-      </form>
-      <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
+          <div id="loginBox">
+            <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
+            <form id="loginForm">
+              <input type="text" name="email" placeholder="Email" class="text" />
+              <input type="password" name="email" placeholder="Password" class="text" />
+              <input class="botao" type="submit" value="SIGN IN" />
 
-      <div id="loginBox">
-        <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
-        <form id="loginForm">
-          <input type="text" name="email" placeholder="Email" class="text" />
-          <input type="password" name="email" placeholder="Password" class="text" />
-          <input class="botao" type="submit" value="SIGN IN" />
-
-          <a href="#">REGISTER</a>
-          <a href="#">Forgot Password?</a>
-        </form>
-      </div>
-    </div>
-
+              <a href="#">REGISTER</a>
+              <a href="#">Forgot Password?</a>
+            </form>
+          </div>
+        </div>
+    -->
 
     <div class="clearfix"></div>
   </div>
   <div class="clearfix"></div>
+
+  <ul class="languages">
+    <li><a href="./" dir="rtl"> عربي </a></li>
+    <li><a href="./">中文</a></li>
+    <li><a class="current" href="./">English</a></li>
+    <li><a href="./">Français</a></li>
+    <li><a href="./">Русский</a></li>
+    <li><a href="./">Español</a></li>
+  </ul>
+  <div class="clearfix"></div>
+
+  <img src="theme/img/sizes.gif" width="67" height="26" alt="aA" id="sizes" usemap="#fontmap">
+  <map name="fontmap">
+    <area shape="rect" id="Out" coords="0,0,33,26" href="zoomIn" alt="Sun">
+    <area shape="rect" id="In" coords="34,0,67,26" href="zoomOut" alt="Sun">
+  </map>
 </header>
 
-<section class="row">
+<div class="row">
   <div class="twenty-seven columns benefits">
-    <div class="prefix_1">
+    <section class="prefix_1">
       <h2>The Benefits of PaperSmart</h2>
 
       <p class="sustainability">
-        <span>可持续性</span>
-        通过在会议室使用要印才印服务，即应要求才印文件来减少本组织的碳足迹。
+        <span>SUSTAINABILITY</span>
+        Reducing the carbon footprint of the organization by using print-on-demand services in meeting rooms, for printing documents upon request.
       </p>
       <p class="accessibility">
-        <span>无障碍获得</span>
-        通过辅助技术的集成，PaperSmart模式使残疾人可以获得信息和文件。
+        <span>ACCESSIBILITY</span>
+        The PaperSmart model, through its integration of assistive technologies, makes information and documents accessible to persons with disabilities.
       </p>
       <p class="efficiency">
-        <span>效率</span>
-        以各种数字格式提供有关联合国会议的信息，并方便在没有列席会议室的情况下进行磋商和分享信息。
+        <span>EFFICIENCY</span>
+        Making information about the meetings of the United Nations available in various digital formats and facilitating consultations and sharing of information without being physically present in the meeting room.
       </p>
       <p class="knowledge">
-        <span>知识管理</span>
-        PaperSmart模式为联合国会议的所有与会者提供综合知识管理解决办法
+        <span>KNOWLEDGE MANAGEMENT</span>
+        The PaperSmart model provides an integrated knowledge management solution for all participants at the meetings of the United Nations.
       </p>
 
-    </div>
+    </section>
   </div>
   <div class="thirteen columns newsBox">
-    <div class="prefix_1 suffix_1">
+    <section class="prefix_1 suffix_1">
       <h2>What’s new</h2>
 
       <div id="newsItems">
         <div class="item">
-          <a href="#"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
-          <p><a href="#">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
+          <a href="text.html"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
+          <p><a href="text.html">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
         </div>
         <div class="item">
-          <a href="#"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
-          <p><a href="#">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
+          <a href="text.html"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
+          <p><a href="text.html">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
         </div>
         <div class="item">
-          <a href="#"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
-          <p><a href="#">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
+          <a href="text.html"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
+          <p><a href="text.html">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
         </div>
       </div>
 
       <div class="pager">
-        <a id="nextNews">&nbsp;</a>
-        <a id="prevNews">&nbsp;</a>
+        <span id="nextNews">&nbsp;</span>
+        <span id="prevNews">&nbsp;</span>
       </div>
 
       <a class="viewall" href="news.html">VIEW ALL</a>
       <a class="twitter" href="#">@PaperSmartUN</a>
       <div class="clearfix"></div>
-    </div>
-
-
+    </section>
   </div>
   <div class="clearfix"></div>
-</section>
+</div>
 
-<section class="row">
+<div class="row">
   <div class="twenty-seven columns homeEvents">
     <div class="prefix_1 suffix_1 columns">
 
-      <div class="seven columns suffix_2">
+      <!--div class="seven columns suffix_2">
         <span class="icon icon-map-marker"></span> Where
         <select name="where" class="default">
           <option value="1">New York</option>
@@ -268,115 +277,124 @@
           <option value="2">UNFPA</option>
         </select>
       </div>
-      <div class="clearfix"></div>
+      <div class="clearfix"></div-->
 
-      <article class="sessionItem">
-        <h1 class="title"><a href="documents.html">Executive Board of the United Nations Entity for Gender Equality and the Empowerment of Women | Annual session of 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+      <section id="Upcoming">
+        <h2>Current and upcoming meetings</h2>
 
-      <article class="sessionItem">
-        <h1 class="title">Doha Climate Change Conference</h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1 class="title"><a href="documents.html">Executive Board of the United Nations Entity for Gender Equality and the Empowerment of Women | Annual session of 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNDP/UNFPA/UNOPS EXECUTIVE BOARD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
-      <article class="sessionItem">
-        <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1 class="title">Doha Climate Change Conference</h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNDP/UNFPA/UNOPS EXECUTIVE BOARD UNDP/UNFPA
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
-      <article class="sessionItem">
-        <h1><a href="documents.html" class="title">United Nations Children’s Fund Executive Board | Annual session 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+      </section>
+      <section id="Recent">
+        <h2>Recent meetings and conferences</h2>
 
-      <article class="sessionItem">
-        <h1>Economic and Social Council | Permanent Forum on Indigenous Issues | Twelfth session</h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
 
-      <article class="sessionItem">
-        <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
-        <ul>
-          <li class="where">
-            <span class="icon icon-map-marker"></span> New York
-          </li>
-          <li class="when">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
-          </li>
-          <li class="who">
-            <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
-            <span class="icon icon-un"></span> UNPD
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </article>
+        <article class="sessionItem">
+          <h1><a href="documents.html" class="title">United Nations Children’s Fund Executive Board | Annual session 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
+
+        <article class="sessionItem">
+          <h1>Economic and Social Council | Permanent Forum on Indigenous Issues | Twelfth session</h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Mon, 05 - TUE, 12 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
+
+        <article class="sessionItem">
+          <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
+          <ul>
+            <li class="where">
+              <span class="icon icon-map-marker"></span> New York
+            </li>
+            <li class="when">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-calendar"></span> Tue, 05 - Fri, 08 Feb 2013
+            </li>
+            <li class="who">
+              <img src="theme/img/bg-boxes.gif" class="pinguelo" alt="" />
+              <span class="icon icon-un"></span> UNPD
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </article>
+
+      </section>
 
       <a href="#" class="loadMore">Load More</a>
     </div>
@@ -389,17 +407,16 @@
           <img src="theme/img/logo-journal.jpg" alt="Journal" width="236" height="65" />
         </figure>
         <hr />
-        <div class="referencia">
-          <a href="javascript:;" class="download">Download <span class="icon icon-angle-down"></span></a>
-          <ul class="downloadBox">
-            <li><a href="#">English</a></li>
-            <li><a href="#">Français</a></li>
-            <li><a href="#">Русский</a></li>
-            <li><a href="#">Español</a></li>
-            <li><a href="#">中文</a></li>
-            <li><a href="#" dir="rtl">عربي </a></li>
-          </ul>
-        </div>
+
+        <ul class="downloadList">
+          <li><a href="#">English</a></li>
+          <li><a href="#" lang="fr">Français</a></li>
+          <li><a href="#" lang="ru">Русский</a></li>
+          <li><a href="#" lang="es">Español</a></li>
+          <li><a href="#" lang="zh">中文</a></li>
+          <li><a href="#" lang="ar" dir="rtl">عربي </a></li>
+        </ul>
+
         <p>To view past issues of the Journal of the United Nations, please visit the <a href="#">Journal of the United Nations page</a></p>
       </div>
       <div class="clearfix"></div>
@@ -407,22 +424,14 @@
       <div class="box dvVideo">
         <h2>Video</h2>
         <p>Watch a 2:43 min. introductory video on PaperSmart concept.</p>
-        <iframe width="283" height="159" src="//www.youtube-nocookie.com/embed/BjVV87v13QA?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="283" height="159" src="//www.youtube.com/embed/BjVV87v13QA?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="clearfix"></div>
 
-      <form id="formContact">
-        <h2>Contact Us</h2>
-        <input type="text" name="name" class="text" placeholder="Name" />
-        <input type="text" name="name" class="text" placeholder="Email" />
-        <textarea class="text" placeholder="Message"></textarea>
-        <input type="submit" value="SUBMIT" class="botao" />
-      </form>
-      <div class="clearfix"></div>
     </div>
   </aside>
   <div class="clearfix"></div>
-</section>
+</div>
 
 <footer>
   <div class="row">
@@ -441,7 +450,8 @@
           <li class="facebook"><a href="#" rel="nofollow"><img src="theme/img/facebook-dark.gif" alt="Fabebook" /></a></li>
         </ul>
       </nav>
-      <a href="#" class="blueButton">Desktop version</a>
+      <a href="#" id="returnMobile" class="blueButton">Mobile version</a>
+      <a href="#" id="escapeMobile" class="blueButton">Desktop version</a>
       <span>© 2013 United Nations</span>
     </div>
   </div>

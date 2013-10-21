@@ -106,6 +106,8 @@
     <img class="logo" src="theme/img/logo-mobile.png" alt="PaperSmart" width="105" height="20" />
   </a>
 
+  <a id="loginMobile" href="#">LOGIN</a>
+
   <div class="mobileLanguage">
     <a id="openLanguage" href="#">English <span class="icon icon-chevron-down"></span></a>
     <ul id="languageBox">
@@ -123,35 +125,27 @@
   <span id="weather">Loading weather…</span>
 </div>
 
-
 <header class="row">
   <div class="twenty-seven columns">
     <div class="prefix_1 suffix_1 columns">
-      <a href="./">
-        <img class="logo" src="theme/img/logo.png" alt="PaperSmart" />
-      </a>
+      <h1>
+        <a href="./">
+          <img class="logo" src="theme/img/logo.png" alt="United Nations PaperSmart" />
+        </a>
+      </h1>
       <nav id="menu">
         <ul>
-          <li><a href="#">MEETINGS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">COMMITMENTS</a></li>
-          <li><a href="#">HELP</a></li>
+          <li><a href="text.html">MEETINGS</a></li>
+          <li><a href="text.html">ABOUT</a></li>
+          <li><a href="text.html">COMMITMENTS</a></li>
+          <li><a href="text.html">HELP</a></li>
         </ul>
       </nav>
     </div>
   </div>
   <div class="thirteen columns">
-    <ul class="languages">
-      <li><a href="./" dir="rtl"> عربي </a></li>
-      <li><a href="./">中文</a></li>
-      <li><a class="current" href="./">English</a></li>
-      <li><a href="./">Français</a></li>
-      <li><a href="./">Русский</a></li>
-      <li><a href="./">Español</a></li>
-    </ul>
-    <div class="clearfix"></div>
-
-    <div class="referencia">
+    <!--
+            <div class="referencia">
       <form id="search">
         <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
         <input type="submit" class="botao" value="&nbsp;" />
@@ -174,13 +168,28 @@
       </div>
     </div>
 
+    -->
 
     <div class="clearfix"></div>
   </div>
   <div class="clearfix"></div>
+
+  <ul class="languages">
+    <li><a href="./" dir="rtl"> عربي </a></li>
+    <li><a href="./">中文</a></li>
+    <li><a class="current" href="./">English</a></li>
+    <li><a href="./">Français</a></li>
+    <li><a href="./">Русский</a></li>
+    <li><a href="./">Español</a></li>
+  </ul>
+  <div class="clearfix"></div>
+
+  <img src="theme/img/sizes.gif" width="67" height="26" alt="aA" id="sizes" usemap="#fontmap">
+  <map name="fontmap">
+    <area shape="rect" id="Out" coords="0,0,33,26" href="zoomIn" alt="Sun">
+    <area shape="rect" id="In" coords="34,0,67,26" href="zoomOut" alt="Sun">
+  </map>
 </header>
-
-
 
 <section class="row">
   <div class="twenty-seven columns homeEvents">
@@ -357,6 +366,7 @@
         <iframe width="283" height="159" src="//www.youtube-nocookie.com/embed/BjVV87v13QA?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="clearfix"></div>
+<!--
 
       <form id="formContact">
         <h2>Contact Us</h2>
@@ -366,6 +376,7 @@
         <input type="submit" value="SUBMIT" class="botao" />
       </form>
       <div class="clearfix"></div>
+-->
     </div>
   </aside>
   <div class="clearfix"></div>
@@ -388,7 +399,8 @@
           <li class="facebook"><a href="#" rel="nofollow"><img src="theme/img/facebook-dark.gif" alt="Fabebook" /></a></li>
         </ul>
       </nav>
-      <a href="#" class="blueButton">Desktop version</a>
+      <a href="#" id="returnMobile" class="blueButton">Mobile version</a>
+      <a href="#" id="escapeMobile" class="blueButton">Desktop version</a>
       <span>© 2013 United Nations</span>
     </div>
   </div>

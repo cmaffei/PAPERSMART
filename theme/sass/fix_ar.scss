@@ -1210,3 +1210,9 @@ footer{
 .cbp-spmenu-push-toleft {
   left: -270px;
 }
+
+
+.pagination a.prev { margin-right:0; margin-left: 20px;}
+.pagination a.prev .icon { margin-right:0;margin-left: 10px }
+.pagination a.next { margin-left:0;margin-right: 20px }
+.pagination a.next .icon { margin-left:0;margin-right: 10px }

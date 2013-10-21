@@ -75,13 +75,13 @@
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
   <form action="#">
     <ul>
-      <li><a href="#">MEETINGS</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">COMMITMENTS</a></li>
-      <li><a href="#">HELP</a></li>
-      <li><a href="#">BENEFITS</a></li>
-      <li><a href="#">CONTACT US</a></li>
-      <li>
+      <li><a href="text.html">MEETINGS</a></li>
+      <li><a href="text.html">ABOUT</a></li>
+      <li><a href="text.html">COMMITMENTS</a></li>
+      <li><a href="text.html">HELP</a></li>
+      <li><a href="text.html">BENEFITS</a></li>
+      <li><a href="text.html">CONTACT US</a></li>
+      <!--<li>
         <a href="javascript:;" class="btLocation">
           CHANGE LOCANTION
           <select id="locationList" onchange="getWeather(this.value)">
@@ -96,7 +96,7 @@
       <li>
         <input id="mobileSearch" type="text" name="q" class="search" placeholder="Search…">
         <input type="submit" class="botao" value="&nbsp;" />
-      </li>
+      </li>-->
     </ul>
   </form>
 </nav>
@@ -131,15 +131,17 @@
 <header class="row">
   <div class="twenty-seven columns">
     <div class="prefix_1 suffix_1 columns">
-      <a href="./">
-        <img class="logo" src="theme/img/logo.png" alt="PaperSmart" />
-      </a>
+      <h1>
+        <a href="./">
+          <img class="logo" src="theme/img/logo.png" alt="United Nations PaperSmart" />
+        </a>
+      </h1>
       <nav id="menu">
         <ul>
-          <li><a href="#">MEETINGS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">COMMITMENTS</a></li>
-          <li><a href="#">HELP</a></li>
+          <li><a href="text.html">MEETINGS</a></li>
+          <li><a href="text.html">ABOUT</a></li>
+          <li><a href="text.html">COMMITMENTS</a></li>
+          <li><a href="text.html">HELP</a></li>
         </ul>
       </nav>
     </div>
@@ -194,9 +196,9 @@
   </map>
 </header>
 
-<section class="row">
+<div class="row">
   <div class="twenty-seven columns benefits">
-    <div class="prefix_1">
+    <section class="prefix_1">
       <h2>The Benefits of PaperSmart</h2>
 
       <p class="sustainability">
@@ -216,43 +218,41 @@
         The PaperSmart model provides an integrated knowledge management solution for all participants at the meetings of the United Nations.
       </p>
 
-    </div>
+    </section>
   </div>
   <div class="thirteen columns newsBox">
-    <div class="prefix_1 suffix_1">
+    <section class="prefix_1 suffix_1">
       <h2>What’s new</h2>
 
       <div id="newsItems">
         <div class="item">
-          <a href="#"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
-          <p><a href="#">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
+          <a href="text.html"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
+          <p><a href="text.html">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
         </div>
         <div class="item">
-          <a href="#"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
-          <p><a href="#">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
+          <a href="text.html"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
+          <p><a href="text.html">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
         </div>
         <div class="item">
-          <a href="#"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
-          <p><a href="#">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
+          <a href="text.html"><img src="theme/img/sample/114x115-1.jpg" alt="UNICEF Executive Board adopts United Nations PaperSmart model for major meeting" /></a>
+          <p><a href="text.html">UNICEF Executive Board adopts United Nations PaperSmart model for major meeting.</a></p>
         </div>
       </div>
 
       <div class="pager">
-        <a id="nextNews">&nbsp;</a>
-        <a id="prevNews">&nbsp;</a>
+        <span id="nextNews">&nbsp;</span>
+        <span id="prevNews">&nbsp;</span>
       </div>
 
       <a class="viewall" href="news.html">VIEW ALL</a>
       <a class="twitter" href="#">@PaperSmartUN</a>
       <div class="clearfix"></div>
-    </div>
-
-
+    </section>
   </div>
   <div class="clearfix"></div>
-</section>
+</div>
 
-<section class="row">
+<div class="row">
   <div class="twenty-seven columns homeEvents">
     <div class="prefix_1 suffix_1 columns">
 
@@ -280,9 +280,8 @@
       </div>
       <div class="clearfix"></div-->
 
-      <article id="Upcoming">
-        <h3>Current and upcoming meetings</h3>
-
+      <section id="Upcoming">
+        <h2>Current and upcoming meetings</h2>
 
         <article class="sessionItem">
           <h1 class="title"><a href="documents.html">Executive Board of the United Nations Entity for Gender Equality and the Empowerment of Women | Annual session of 2013 <span class="icon icon-chevron-right"></span></a></h1>
@@ -319,7 +318,10 @@
           </ul>
           <div class="clearfix"></div>
         </article>
-        <h3>Current and upcoming meetings</h3>
+
+      </section>
+      <section id="Recent">
+        <h2>Recent meetings and conferences</h2>
 
         <article class="sessionItem">
           <h1><a href="documents.html">United Nations Economic and Social Commission for Asia and the Pacific International Annual Meeting on Language Arrangements, Documentation and Publications for 2013 <span class="icon icon-chevron-right"></span></a></h1>
@@ -393,7 +395,7 @@
           <div class="clearfix"></div>
         </article>
 
-      </article>
+      </section>
 
       <a href="#" class="loadMore">Load More</a>
     </div>
@@ -409,11 +411,11 @@
 
         <ul class="downloadList">
           <li><a href="#">English</a></li>
-          <li><a href="#">Français</a></li>
-          <li><a href="#">Русский</a></li>
-          <li><a href="#">Español</a></li>
-          <li><a href="#">中文</a></li>
-          <li><a href="#" dir="rtl">عربي </a></li>
+          <li><a href="#" lang="fr">Français</a></li>
+          <li><a href="#" lang="ru">Русский</a></li>
+          <li><a href="#" lang="es">Español</a></li>
+          <li><a href="#" lang="zh">中文</a></li>
+          <li><a href="#" lang="ar" dir="rtl">عربي </a></li>
         </ul>
 
         <p>To view past issues of the Journal of the United Nations, please visit the <a href="#">Journal of the United Nations page</a></p>
@@ -423,22 +425,14 @@
       <div class="box dvVideo">
         <h2>Video</h2>
         <p>Watch a 2:43 min. introductory video on PaperSmart concept.</p>
-        <iframe width="283" height="159" src="//www.youtube-nocookie.com/embed/BjVV87v13QA?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="283" height="159" src="//www.youtube.com/embed/BjVV87v13QA?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="clearfix"></div>
 
-      <form id="formContact">
-        <h2>Contact Us</h2>
-        <input type="text" name="name" class="text" placeholder="Name" />
-        <input type="text" name="name" class="text" placeholder="Email" />
-        <textarea class="text" placeholder="Message"></textarea>
-        <input type="submit" value="SUBMIT" class="botao" />
-      </form>
-      <div class="clearfix"></div>
     </div>
   </aside>
   <div class="clearfix"></div>
-</section>
+</div>
 
 <footer>
   <div class="row">

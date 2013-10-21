@@ -130,61 +130,69 @@
 <header class="row">
   <div class="twenty-seven columns">
     <div class="prefix_1 suffix_1 columns">
-      <a href="./">
-        <img class="logo" src="theme/img/logo.png" alt="PaperSmart" />
-      </a>
+      <h1>
+        <a href="./">
+          <img class="logo" src="theme/img/logo.png" alt="United Nations PaperSmart" />
+        </a>
+      </h1>
       <nav id="menu">
         <ul>
-          <li><a href="#">MEETINGS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">COMMITMENTS</a></li>
-          <li><a href="#">HELP</a></li>
+          <li><a href="text.html">MEETINGS</a></li>
+          <li><a href="text.html">ABOUT</a></li>
+          <li><a href="text.html">COMMITMENTS</a></li>
+          <li><a href="text.html">HELP</a></li>
         </ul>
       </nav>
     </div>
   </div>
   <div class="thirteen columns">
-    <ul class="languages">
-      <li><a href="./" dir="rtl"> عربي </a></li>
-      <li><a href="./">中文</a></li>
-      <li><a class="current" href="./">English</a></li>
-      <li><a href="./">Français</a></li>
-      <li><a href="./">Русский</a></li>
-      <li><a href="./">Español</a></li>
-    </ul>
-    <div class="clearfix"></div>
+    <!--
+        <div class="referencia">
+          <form id="search">
+            <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
+            <input type="submit" class="botao" value="&nbsp;" />
 
-    <div class="referencia">
-      <form id="search">
-        <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
-        <input type="submit" class="botao" value="" />
+            <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
+            <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
 
-        <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
-        <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
-        <!-- Checkbox powered by CssCheckbox.com -->
+            <input id="demo_box_2" class="css-checkbox" type="checkbox" />
+            <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
+          </form>
+          <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
 
-        <input id="demo_box_2" class="css-checkbox" type="checkbox" />
-        <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
-      </form>
-      <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
+          <div id="loginBox">
+            <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
+            <form id="loginForm">
+              <input type="text" name="email" placeholder="Email" class="text" />
+              <input type="password" name="email" placeholder="Password" class="text" />
+              <input class="botao" type="submit" value="SIGN IN" />
 
-      <div id="loginBox">
-        <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
-        <form id="loginForm">
-          <input type="text" name="email" placeholder="Email" class="text" />
-          <input type="password" name="email" placeholder="Password" class="text" />
-          <input class="botao" type="submit" value="SIGN IN" />
-
-          <a href="#">REGISTER</a>
-          <a href="#">Forgot Password?</a>
-        </form>
-      </div>
-    </div>
-
+              <a href="#">REGISTER</a>
+              <a href="#">Forgot Password?</a>
+            </form>
+          </div>
+        </div>
+    -->
 
     <div class="clearfix"></div>
   </div>
   <div class="clearfix"></div>
+
+  <ul class="languages">
+    <li><a href="./" dir="rtl"> عربي </a></li>
+    <li><a href="./">中文</a></li>
+    <li><a class="current" href="./">English</a></li>
+    <li><a href="./">Français</a></li>
+    <li><a href="./">Русский</a></li>
+    <li><a href="./">Español</a></li>
+  </ul>
+  <div class="clearfix"></div>
+
+  <img src="theme/img/sizes.gif" width="67" height="26" alt="aA" id="sizes" usemap="#fontmap">
+  <map name="fontmap">
+    <area shape="rect" id="Out" coords="0,0,33,26" href="zoomIn" alt="Sun">
+    <area shape="rect" id="In" coords="34,0,67,26" href="zoomOut" alt="Sun">
+  </map>
 </header>
 
 <section class="row documents">
@@ -221,10 +229,10 @@
     <div class="prefix_1 suffix_1">
 
     <ul id="carousel" class="elastislide-list">
-       <li><a class="item off" href="#"><span class="icon icon-calendar"></span><br />PROGRAMME</a></li><!--
-    --><li><a class="item off" href="#"><span class="icon icon-list"></span><br />AGENDA</a></li><!--
-    --><li><a class="item on" href="#"><span class="icon icon-file-text-alt"></span><br />DOCUMENTS</a></li><!--
-    --><li><a class="item off" href="#"><span class="icon icon-microphone"></span><br />STATEMENTS</a></li>
+       <li><a class="item off" href="programme.html"><span class="icon icon-calendar"></span><br />PROGRAMME</a></li><!--
+    --><li><a class="item off" href="agenda.html"><span class="icon icon-list"></span><br />AGENDA</a></li><!--
+    --><li><a class="item on" href="documents.html"><span class="icon icon-file-text-alt"></span><br />DOCUMENTS</a></li><!--
+    --><li><a class="item off" href="statements.html"><span class="icon icon-microphone"></span><br />STATEMENTS</a></li>
     </ul>
 
       <div class="sort">
@@ -250,28 +258,10 @@
           <a href="javascript:;" class="icon-angle-down abridor btAbre"></a>
           <div class="clearfix"></div>
           <div class="content">
-            <div class="squaredFour">
-              <input type="checkbox" value="None" id="squaredFoura" name="check" />
-              <label for="squaredFoura"></label>
-            </div>
-            <span class="bold">Group Actions</span>
-            <div class="referencia" style="display: inline-block;">
-              <a href="#" class="blackDown">&nbsp;</a>
-              <div class="blackBox">
-                <img src="theme/img/black-box.png" alt="" class="pinguelo" />
-                <a href="#">Print on Demand</a>
-                <a href="#">Email</a>
-                <a href="#">Share</a>
-              </div>
-            </div>
             <article class="listDocumentItem">
               <!-- very big item, huh? -->
-              <div class="squaredFour">
-                <input type="checkbox" value="None" id="squaredFour3" name="check" />
-                <label for="squaredFour3"></label>
-              </div>
               <div class="referencia">
-                <a href="#" class="blueDown">&nbsp;</a>
+                <span class="blueDown"></span>
                 <div class="blueBox">
                   <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
                   <a href="#">Print on Demand</a>
@@ -298,12 +288,8 @@
             </article>
             <article class="listDocumentItem">
               <!-- very big item, huh? -->
-              <div class="squaredFour">
-                <input type="checkbox" value="None" id="squaredFour1" name="check" />
-                <label for="squaredFour1"></label>
-              </div>
               <div class="referencia">
-                <a href="#" class="blueDown">&nbsp;</a>
+                <span class="blueDown"></span>
                 <div class="blueBox">
                   <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
                   <a href="#">Print on Demand</a>
@@ -330,12 +316,8 @@
             </article>
             <article class="listDocumentItem">
               <!-- very big item, huh? -->
-              <div class="squaredFour">
-                <input type="checkbox" value="None" id="squaredFour2" name="check" />
-                <label for="squaredFour2"></label>
-              </div>
               <div class="referencia">
-                <a href="#" class="blueDown">&nbsp;</a>
+                <span class="blueDown"></span>
                 <div class="blueBox">
                   <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
                   <a href="#">Print on Demand</a>
@@ -370,28 +352,10 @@
           <a href="javascript:;" class="icon-angle-down abridor btAbre"></a>
           <div class="clearfix"></div>
           <div class="content">
-            <div class="squaredFour">
-              <input type="checkbox" value="None" id="squaredFourb" name="check" />
-              <label for="squaredFourb"></label>
-            </div>
-            <span class="bold">Group Actions</span>
-            <div class="referencia" style="display: inline-block;">
-              <a href="#" class="blackDown">&nbsp;</a>
-              <div class="blackBox">
-                <img src="theme/img/black-box.png" alt="" class="pinguelo" />
-                <a href="#">Print on Demand</a>
-                <a href="#">Email</a>
-                <a href="#">Share</a>
-              </div>
-            </div>
             <article class="listDocumentItem">
               <!-- very big item, huh? -->
-              <div class="squaredFour">
-                <input type="checkbox" value="None" id="squaredFour3a" name="check" />
-                <label for="squaredFour3a"></label>
-              </div>
               <div class="referencia">
-                <a href="#" class="blueDown">&nbsp;</a>
+                <span class="blueDown"></span>
                 <div class="blueBox">
                   <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
                   <a href="#">Print on Demand</a>
@@ -418,12 +382,8 @@
             </article>
             <article class="listDocumentItem">
               <!-- very big item, huh? -->
-              <div class="squaredFour">
-                <input type="checkbox" value="None" id="squaredFour1a" name="check" />
-                <label for="squaredFour1a"></label>
-              </div>
               <div class="referencia">
-                <a href="#" class="blueDown">&nbsp;</a>
+                <span class="blueDown"></span>
                 <div class="blueBox">
                   <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
                   <a href="#">Print on Demand</a>
@@ -450,12 +410,8 @@
             </article>
             <article class="listDocumentItem">
               <!-- very big item, huh? -->
-              <div class="squaredFour">
-                <input type="checkbox" value="None" id="squaredFour2a" name="check" />
-                <label for="squaredFour2a"></label>
-              </div>
               <div class="referencia">
-                <a href="#" class="blueDown">&nbsp;</a>
+                <span class="blueDown"></span>
                 <div class="blueBox">
                   <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
                   <a href="#">Print on Demand</a>
@@ -484,10 +440,17 @@
           </div><!-- /.content -->
         </div><!-- /.item -->
 
-        <a href="#" class="loadMore">Load More</a>
+        <!--<a href="#" class="loadMore">Load More</a>-->
 
         <div class="pagination">
-          <a></a>
+          <a href="#" class="prev"><span class="icon icon-angle-left"></span> Previous</a>
+          <a href="#">1</a>
+          <a href="#" class="current">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#" class="next">Next <span class="icon icon-angle-right"></span></a>
         </div>
 
       </div>
@@ -543,7 +506,7 @@
           </div>
         </article>
         <hr />
-        <a class="blueButton">VIEW ALL</a>
+        <a class="blueButton" href="#">VIEW ALL</a>
 
       </div>
       <div class="box dvJournal">
@@ -600,8 +563,8 @@
           <li>.<a href="#">Terms Of Use</a></li>
           <li>.<a href="#">Privacy Notice</a></li>
           <li>.<a href="#">Fraud Alert</a></li>
-          <li class="twitter"><a href="#" rel="nofollow"><img src="theme/img/twitter-dark.gif" /></a></li>
-          <li class="facebook"><a href="#" rel="nofollow"><img src="theme/img/facebook-dark.gif" /></a></li>
+          <li class="twitter"><a href="#" rel="nofollow"><img src="theme/img/twitter-dark.gif" alt="Twitter" /></a></li>
+          <li class="facebook"><a href="#" rel="nofollow"><img src="theme/img/facebook-dark.gif" alt="Fabebook" /></a></li>
         </ul>
       </nav>
       <a href="#" id="returnMobile" class="blueButton">Mobile version</a>

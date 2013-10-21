@@ -106,6 +106,8 @@
     <img class="logo" src="theme/img/logo-mobile.png" alt="PaperSmart" width="105" height="20" />
   </a>
 
+  <a id="loginMobile" href="#">LOGIN</a>
+
   <div class="mobileLanguage">
     <a id="openLanguage" href="#">English <span class="icon icon-chevron-down"></span></a>
     <ul id="languageBox">
@@ -127,61 +129,69 @@
 <header class="row">
   <div class="twenty-seven columns">
     <div class="prefix_1 suffix_1 columns">
-      <a href="./">
-        <img class="logo" src="theme/img/logo.png" alt="PaperSmart" />
-      </a>
+      <h1>
+        <a href="./">
+          <img class="logo" src="theme/img/logo.png" alt="United Nations PaperSmart" />
+        </a>
+      </h1>
       <nav id="menu">
         <ul>
-          <li><a href="#">MEETINGS</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">COMMITMENTS</a></li>
-          <li><a href="#">HELP</a></li>
+          <li><a href="text.html">MEETINGS</a></li>
+          <li><a href="text.html">ABOUT</a></li>
+          <li><a href="text.html">COMMITMENTS</a></li>
+          <li><a href="text.html">HELP</a></li>
         </ul>
       </nav>
     </div>
   </div>
   <div class="thirteen columns">
-    <ul class="languages">
-      <li><a href="./" dir="rtl"> عربي </a></li>
-      <li><a href="./">中文</a></li>
-      <li><a class="current" href="./">English</a></li>
-      <li><a href="./">Français</a></li>
-      <li><a href="./">Русский</a></li>
-      <li><a href="./">Español</a></li>
-    </ul>
-    <div class="clearfix"></div>
+    <!--
+        <div class="referencia">
+          <form id="search">
+            <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
+            <input type="submit" class="botao" value="&nbsp;" />
 
-    <div class="referencia">
-      <form id="search">
-        <input type="input" class="texto" name="q" placeholder="Search for meetings..." />
-        <input type="submit" class="botao" value="" />
+            <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
+            <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
 
-        <input id="demo_box_1" class="css-checkbox" type="checkbox" checked="checked" />
-        <label for="demo_box_1" name="demo_lbl_1" class="css-label nomargin">PaperSmart</label>
-        <!-- Checkbox powered by CssCheckbox.com -->
+            <input id="demo_box_2" class="css-checkbox" type="checkbox" />
+            <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
+          </form>
+          <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
 
-        <input id="demo_box_2" class="css-checkbox" type="checkbox" />
-        <label for="demo_box_2" name="demo_lbl_2" class="css-label">This Section</label>
-      </form>
-      <a href="javascript:;" class="myAccount">MY ACCOUNT</a>
+          <div id="loginBox">
+            <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
+            <form id="loginForm">
+              <input type="text" name="email" placeholder="Email" class="text" />
+              <input type="password" name="email" placeholder="Password" class="text" />
+              <input class="botao" type="submit" value="SIGN IN" />
 
-      <div id="loginBox">
-        <img src="theme/img/login-arrow.png" alt="" class="pinguelo" />
-        <form id="loginForm">
-          <input type="text" name="email" placeholder="Email" class="text" />
-          <input type="password" name="email" placeholder="Password" class="text" />
-          <input class="botao" type="submit" value="SIGN IN" />
-
-          <a href="#">REGISTER</a>
-          <a href="#">Forgot Password?</a>
-        </form>
-      </div>
-    </div>
-
+              <a href="#">REGISTER</a>
+              <a href="#">Forgot Password?</a>
+            </form>
+          </div>
+        </div>
+    -->
 
     <div class="clearfix"></div>
   </div>
   <div class="clearfix"></div>
+
+  <ul class="languages">
+    <li><a href="./" dir="rtl"> عربي </a></li>
+    <li><a href="./">中文</a></li>
+    <li><a class="current" href="./">English</a></li>
+    <li><a href="./">Français</a></li>
+    <li><a href="./">Русский</a></li>
+    <li><a href="./">Español</a></li>
+  </ul>
+  <div class="clearfix"></div>
+
+  <img src="theme/img/sizes.gif" width="67" height="26" alt="aA" id="sizes" usemap="#fontmap">
+  <map name="fontmap">
+    <area shape="rect" id="Out" coords="0,0,33,26" href="zoomIn" alt="Sun">
+    <area shape="rect" id="In" coords="34,0,67,26" href="zoomOut" alt="Sun">
+  </map>
 </header>
 
 <!--remove the .active to close, add to show-->
@@ -211,14 +221,15 @@
 
 <section class="row documents">
   <div class="holder">
+    <ul class="breadcrumb">
+      <li><a href="./">Home</a></li>
+      <li><a href="#">UN Women</a></li>
+      <li><a class="current" href="#">First Regular Session</a></li>
+    </ul>
+    <div class="clearfix"></div>
+
     <div class="twenty-seven columns">
       <div class="prefix_1 suffix_1">
-        <ul class="breadcrumb">
-          <li><a href="./">Home</a></li>
-          <li><a href="#">UN Women</a></li>
-          <li><a class="current" href="#">First Regular Session</a></li>
-        </ul>
-        <div class="clearfix"></div>
         <h1>Executive Board of the United Nations Development Programme, the United Nations Population Fund and the United Nations Office for Projects Services</h1>
 
         <div class="infos">
@@ -557,7 +568,7 @@
           </div>
         </article>
         <hr />
-        <a class="blueButton">VIEW ALL</a>
+        <a class="blueButton" href="#">VIEW ALL</a>
 
       </div>
       <div class="box dvJournal">
@@ -617,11 +628,12 @@
           <li>.<a href="#">Terms Of Use</a></li>
           <li>.<a href="#">Privacy Notice</a></li>
           <li>.<a href="#">Fraud Alert</a></li>
-          <li class="twitter"><a href="#" rel="nofollow"><img src="theme/img/twitter-dark.gif" /></a></li>
-          <li class="facebook"><a href="#" rel="nofollow"><img src="theme/img/facebook-dark.gif" /></a></li>
+          <li class="twitter"><a href="#" rel="nofollow"><img src="theme/img/twitter-dark.gif" alt="Twitter" /></a></li>
+          <li class="facebook"><a href="#" rel="nofollow"><img src="theme/img/facebook-dark.gif" alt="Fabebook" /></a></li>
         </ul>
       </nav>
-      <a href="#" class="blueButton">Desktop version</a>
+      <a href="#" id="returnMobile" class="blueButton">Mobile version</a>
+      <a href="#" id="escapeMobile" class="blueButton">Desktop version</a>
       <span>© 2013 United Nations</span>
     </div>
   </div>
