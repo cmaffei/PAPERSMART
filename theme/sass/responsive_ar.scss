@@ -1,0 +1,299 @@
+$leading: right;
+$trailing: left;
+$dir: rtl;
+@import "bidi";
+
+$primary-blue: #5c75af;
+$primary-blue-border: #455887;
+$body-link-color: #5378b0;
+
+$left: leading;
+$right: trailing;
+
+// tablet
+@media only screen and (max-width: 1023px) {
+  html:not(.oldie) {
+    body {
+      background-position:$leading 0 !important;
+    }
+    .row.mobile {
+      #loginMobile {
+        float: #{$trailing};
+        @include margin-leading(10px);
+        @include margin-trailing(28px);
+      }
+
+    }
+    .row.mobile.blue {
+      #showLeftPush {
+        @include margin-trailing(5px);
+        @include margin-leading(28px);
+      }
+      .btSearch{
+        float: #{$trailing};
+      }
+      .mobileLanguage {
+        float: #{$trailing};
+        ul {
+          right:auto;
+          left: 0;
+        }
+      }
+    }
+    .btLocation{
+      select {
+        #{$trailing}:auto;
+        #{$leading}: 0;
+      }
+    }
+
+    .homeEvents {
+      .seven{
+        float: #{$leading};
+      }
+      .seven.suffix_2{
+        @include margin-leading(0, yes);
+        @include margin-trailing(3%, yes);
+      }
+    }
+    .sessionItem ul { //ok
+      .where, .when, .who, li{
+        padding-right: 44px;
+        text-align: right;
+      }
+    }
+
+    .documents {
+      width: 100% !important;
+      .holder{
+        .twenty-seven{
+          float: #{$leading};
+          .btExpand{
+            #{$trailing}:auto;
+            #{$leading}: 25px;
+          }
+        }
+        .thirteen{
+          float: #{$leading};
+        }
+      }
+    }
+
+    .search {
+      .prefix_1{
+        @include margin-trailing(0, yes);
+        @include margin-leading(5px, yes);
+      }
+      .suffix_1{
+        @include margin-leading(0, yes);
+        @include margin-trailing(5px, yes);
+      }
+    }
+
+    .dvText {
+      p, h1, .date {
+        @include margin-trailing(0px, yes);//margin-left: 0px !important;
+        @include margin-leading(0px, yes);//margin-left: 0px !important;
+      }
+      .social {
+        #{$leading}:auto;
+        #{$trailing}: 10px;
+      }
+    }
+
+    .dashboard{
+      a.item {
+        @include margin-trailing(0, yes);
+        @include margin-leading(6%, yes);
+      }
+    }
+  }
+}// tablet
+
+@media only screen and (max-width: 550px) {
+  html:not(.oldie) {
+    .statementList {
+      .holder {
+        a {
+          @include margin-trailing(0, yes);//margin-left: 0px;
+          @include margin-leading(0, yes);//margin-left: 0px;
+        }
+        .btVideo {
+          right: 0;
+        }
+        .btAudio {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// smartphone
+@media only screen and (max-width: 400px) {
+  html:not(.oldie) {
+    .row {
+    }
+    .row.mobile {
+      padding:{
+        #{$leading}: 9px !important;
+        #{$trailing}: 9px !important;
+      };
+    }
+    .row.mobile.blue {
+      #showLeftPush {
+        @include margin-leading(0px);
+      }
+      .mobileLanguage {
+        @include margin-trailing(10px);
+      }
+      #loginMobile {
+        @include margin-trailing(0px);
+      }
+    }
+
+    .homeEvents {
+      .suffix_1{
+        @include margin-leading(0, yes);
+        @include margin-trailing(10px, yes);
+      }
+      .prefix_1{
+        @include margin-trailing(0, yes);
+        @include margin-leading(10px, yes);
+      }
+
+      .seven{
+        float: #{$leading};
+      }
+      .seven.suffix_2{
+        @include margin-leading(0, yes);
+        @include margin-trailing(3%, yes);
+      }
+    }
+
+
+    .documents {
+      .holder{
+        .suffix_1{
+          @include margin-leading(0, yes);
+          @include margin-trailing(10px, yes);
+        }
+        .prefix_1{
+          @include margin-trailing(0, yes);
+          @include margin-leading(10px, yes);
+        }
+      }
+    }
+
+
+    .documentContent{
+      .suffix_1{
+        @include margin-leading(0, yes);
+        @include margin-trailing(10px, yes);
+      }
+      .prefix_1{
+        @include margin-trailing(0, yes);
+        @include margin-leading(10px, yes);
+      }
+      .sort{
+        .dummie{
+          label{
+            float: #{$leading};
+          }
+          select, .dk_container{
+            float: left !important;
+          }
+        }
+      }
+    }
+    .listDocument{
+      .item{
+        .content{
+          .blackBox{
+            #{$trailing}:auto !important;
+            #{$leading}: -80px !important;
+            .pinguelo{
+              #{$trailing}:auto;
+              #{$leading}: 50%;
+              @include margin-trailing(0);
+              @include margin-leading(-5px);
+            }
+          }
+        }
+      }
+    }
+
+    .programmeList{
+      .holderMobile{
+        .btVideo {
+          float: #{$leading};
+        }
+        .btAudio {
+          float: #{$trailing};
+        }
+      }
+    }
+
+    .dashboard{
+      a.item {
+        @include margin-leading(0, yes);
+        float: right;
+      }
+      a.item:nth-child(2), a.item:nth-child(4){
+        float: left;
+      }
+    }
+
+    footer {
+      .fourty {
+        ul {
+          li {
+            @include margin-leading(0px);
+          }
+          .facebook{
+            @include margin-trailing(0);
+            @include margin-leading(6px);
+          }
+        }
+      }
+    }
+
+    .presskit {
+      h1 {
+        padding-right: 0;
+      }
+      .mobileAdapt {
+        float: right;
+      }
+      .bio {
+        figure{
+          img {
+            margin-left: 6px;
+          }
+        }
+        .w108 {
+          float: left;
+        }
+      }
+    }
+
+    .pagination {
+      a {
+        &.prev {
+          @include margin-leading(0px);
+          .icon {
+            @include margin-trailing(0, yes);
+            @include margin-leading(5px, yes);
+          }
+        }
+        &.next {
+          @include margin-trailing(0px);
+          .icon {
+            @include margin-leading(0, yes);
+            @include margin-trailing(5px, yes);
+          }
+        }
+      }
+    }
+  }
+}//smartphone
