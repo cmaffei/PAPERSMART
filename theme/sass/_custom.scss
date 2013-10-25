@@ -3066,7 +3066,8 @@ footer{
     }
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1180px) {
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
   html:not(.ie7) {
     // Generate the Grid
     .column, .columns {
@@ -3074,7 +3075,6 @@ footer{
     }
 
     // Column Classes */
-
     // Generate Column Classes
     .row {
       @for $i from 1 through $cols{
@@ -3142,7 +3142,7 @@ footer{
 }
 
 // 1024px
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
 
   .row{
     padding:0 !important;
