@@ -1,0 +1,10 @@
+* {
+  font-family: simsong, Arial Unicode MS !important;
+}
+header .languages a {
+  font-family: 'Open Sans' !important;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'FontAwesome' !important;
+}

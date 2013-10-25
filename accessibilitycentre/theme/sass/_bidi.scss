@@ -1,0 +1,124 @@
+//
+// Margin styles
+//
+@mixin margin($top, $trail: null, $bottom: null, $lead: null) {
+  @if $trail == null {
+    $trail: $top;
+  }
+
+  @if $bottom == null {
+    $bottom: $top;
+  }
+
+  @if $lead== null {
+    $lead: $trail;
+  }
+
+  @if $leading == left {
+    margin: $top $trail $bottom $lead;
+  } @else if $leading == right{
+    margin: $top $lead $bottom $trail;
+  }
+}
+
+@mixin margin-leading($margin, $imp: null) {
+  @if $imp != null {
+    margin-#{$leading}: $margin !important;
+  } @else {
+    margin-#{$leading}: $margin;
+  }
+}
+
+@mixin margin-trailing($margin, $imp: null) {
+  @if $imp != null {
+    margin-#{$trailing}: $margin !important;
+  } @else {
+    margin-#{$trailing}: $margin;
+  }
+}
+
+//
+// Padding styles
+//
+@mixin padding($top, $trail: null, $bottom: null, $lead: null) {
+  @if $trail == null {
+    $trail: $top;
+  }
+
+  @if $bottom == null {
+    $bottom: $top;
+  }
+
+  @if $lead== null {
+    $lead: $trail;
+  }
+
+  @if $leading == left {
+    padding: $top $trail $bottom $lead;
+  } @else if $leading == right{
+    padding: $top $lead $bottom $trail;
+  }
+}
+
+@mixin padding-leading($padding, $imp: null) {
+  @if $imp != null {
+    padding-#{$leading}: $padding !important;
+  } @else {
+    padding-#{$leading}: $padding;
+  }
+}
+
+@mixin padding-trailing($padding, $imp: null) {
+  @if $imp != null {
+    padding-#{$trailing}: $padding !important;
+  } @else {
+    padding-#{$trailing}: $padding;
+  }
+}
+
+//
+// Border styles
+//
+@mixin border-leading($one, $two: null, $three: null) {
+  @if $three != null {
+    border-#{$leading}: $one $two $three;
+  } @else if $two != null {
+    border-#{$leading}: $one $two;
+  } @else {
+    border-#{$leading}: $one
+  }
+}
+
+@mixin border-trailing($one, $two: null, $three: null) {
+  @if $three != null {
+    border-#{$trailing}: $one $two $three;
+  } @else if $two != null {
+    border-#{$trailing}: $one $two;
+  } @else {
+    border-#{$trailing}: $one
+  }
+}
+
+@mixin float($side)  {
+  @if $side == leading {
+    float: $leading;
+  } @else if $side == trailing {
+    float: $trailing;
+  }
+}
+
+@mixin text-align($side) {
+  @if $side == leading {
+    text-align: $leading;
+  } @else if $side == trailing {
+    text-align: $trailing;
+  }
+}
+
+@mixin background-position($ypos, $xpos) {
+  @if $xpos == leading {
+    background-position: $ypos $leading;
+  } @else if $xpos == trailing {
+    background-position: $ypos $trailing;
+  }
+}
